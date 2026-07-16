@@ -11,11 +11,11 @@ from match_score import calculate_match_score #, clean_technologies
 from notifier import send_message_telegram
 
 # --- Your profile (adjust to your real values) ---
-TECHNOLOGIES = ["Python", "SQL", "Tableau", "AWS"]
+TECHNOLOGIES = ["Python", "SQL", "Tableau", "AWS", "Docker", "Pandas", "PyTorch", "BI", "TensorFlow"]
 PREFERRED_ROLE = "analyst"
-PREFERRED_DISTRICTS = ["Gangnam", "Pangyo", "Seongsu"]
-MINIMUM_SALARY = 30000000  # 30 million KRW
-MATCH_THRESHOLD = 60
+PREFERRED_DISTRICTS = ["Seoul","Gangnam", "Pangyo", "Seongsu"]
+MINIMUM_SALARY = 0  # 30 million KRW
+MATCH_THRESHOLD = 50
 
 def run_pipeline():
     df = pd.read_csv("data/processed/processed_offers.csv")

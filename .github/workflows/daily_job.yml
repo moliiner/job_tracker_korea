@@ -1,0 +1,31 @@
+name: Daily job tracker
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # "0 0 * * *" 9am Korea hour (KST = UTC+9)
+  workflow_dispatch:        # it allows you to run it manually as well, for testing
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python agent/daily_pipeline.py
+
+      - name: Save results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-alerts
+          path: data/processed/alerts_*.csv

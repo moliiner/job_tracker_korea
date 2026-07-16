@@ -1,6 +1,12 @@
+import sys
+
 import streamlit as st
 import pandas as pd
 import re
+import os
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "model"))
+from match_score import calculate_match_score, clean_technologies
 
 st.set_page_config(layout="wide")
 st.title("JOB TRACKER — Seoul")
@@ -8,15 +14,28 @@ st.title("JOB TRACKER — Seoul")
 df = pd.read_csv("data/processed/processed_offers.csv")
 df["publication_date"] = pd.to_datetime(df["publication_date"], errors="coerce")
 
-def clean_technologies(valor):
-    if pd.isna(valor):
+
+TECHNOLOGIES = ["Python", "SQL", "Tableau", "AWS"]
+PREFERRED_ROLE = "analyst"
+PREFERRED_DISTRICTS = ["Gangnam", "Pangyo", "Seongsu"]
+MINIMUM_ACCEPTABLE_SALARY = 30000000  # 30 million KRW
+
+df["match_score"] = df.apply(
+    lambda row: calculate_match_score(
+        row, TECHNOLOGIES, PREFERRED_ROLE, PREFERRED_DISTRICTS, MINIMUM_ACCEPTABLE_SALARY
+    ),
+    axis=1
+)
+
+def clean_technologies(value):
+    if pd.isna(value):
         return []
-    limpio = re.sub(r"[\[\]']", "", str(valor))
+    limpio = re.sub(r"[\[\]']", "", str(value))
     return [t.strip() for t in limpio.split(",") if t.strip()]
 
 technologies_per_offer = df["technologies"].apply(clean_technologies)
 
-# --- KPIs superiores, siempre visibles ---
+# --- upper KPIs, always visible ---
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Tracked offers", len(df))
 col2.metric("Mentions visa", f"{df['mentions_visa'].mean()*100:.0f}%")
@@ -67,13 +86,13 @@ with tab4:
     st.subheader("Explore the tracked offers")
     col_f1, col_f2 = st.columns(2)
     with col_f1:
-        role_filter = st.multiselect("Role category", df["role_title"].dropna().unique() if "role_category" in df.columns else [])
+        role_filter = st.multiselect("Role category", df["role_category"].dropna().unique() if "role_category" in df.columns else [])
     with col_f2:
         visa_filter = st.checkbox("Only offers with visa mention")
 
     df_filtrado = df.copy()
     if role_filter:
-        df_filtrado = df_filtrado[df_filtrado["role_title"].isin(role_filter)]
+        df_filtrado = df_filtrado[df_filtrado["role_category"].isin(role_filter)]
     if visa_filter:
         df_filtrado = df_filtrado[df_filtrado["mentions_visa"] == True]
 

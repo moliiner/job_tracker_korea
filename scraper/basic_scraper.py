@@ -29,3 +29,4 @@ def track_unique_technologies(description):
 df["technologies"] = df["description"].apply(track_unique_technologies)
 
 df.to_csv("data/processed/processed_offers.csv", index=False)
+

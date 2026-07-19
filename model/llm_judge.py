@@ -6,48 +6,54 @@ from dotenv import load_dotenv
 load_dotenv()
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
-# --- Your profile: adjust to your real values ---
-USER_PROFILE = {
-    "technologies": ["Python", "SQL", "Tableau", "AWS", "Docker", "Pandas", "PyTorch", "BI", "TensorFlow"],
-    "preferred_roles": ["data analyst", "data scientist", "AI engineer"],
-    "preferred_districts": ["Seoul", "Gangnam", "Pangyo", "Seongsu"],
-    "minimum_salary_krw": 30000000 #KRW/year
-}
 
-PROMPT_TEMPLATE = """You are evaluating a job offer for a candidate relocating to Seoul, South Korea on an H-1 visa, applying for data analyst / data scientist / AI engineer roles.
+PROMPT_TEMPLATE = """You are an expert job-matching assistant.
 
-Candidate profile:
-- Technologies: {technologies}
-- Preferred roles: {preferred_roles}
-- Preferred districts: {preferred_districts}
-- Minimum acceptable salary (KRW/year): {minimum_salary}
+CANDIDATE CV:
+{cv}
 
-Job offer to evaluate:
+IMPORTANT CONTEXT:
+- Candidate wants to transition into Data Analyst / Data Scientist / AI Engineer roles
+- Candidate is targeting South Korea (Seoul, Pangyo, Gangnam)
+- Candidate may need visa sponsorship
+- Prioritize international-friendly companies
+
+JOB OFFER:
 Company: {company}
 Title: {title}
 Location: {location}
 Description: {description}
 
-Evaluate this offer and respond with ONLY a JSON object (no preamble, no markdown fences), with exactly this structure:
+Evaluate this offer and respond with ONLY a JSON object:
+
 {{
   "role_category": "analyst" | "scientist" | "ai_engineer" | "other",
-  "technologies_found": ["list", "of", "technologies", "mentioned"],
+  "technologies_found": [],
   "visa_sponsorship_likelihood": 0-100,
   "foreigner_friendly_signal": true | false,
   "salary_meets_minimum": true | false | "unknown",
   "match_score": 0-100,
-  "reasoning": "one short sentence explaining the match_score"
+  "reasoning": "short explanation"
 }}
 
-Weight the match_score approximately as: 35% technology overlap, 30% visa/sponsorship likelihood, 20% role category match, 10% location match, 5% salary fit.
+SCORING RULES:
+- 35% tech overlap with CV
+- 30% visa likelihood
+- 20% role alignment (DATA roles prioritized)
+- 10% location (Korea preferred)
+- 5% salary
+
+STRICT RULES:
+- Penalize non-data roles heavily
+- Penalize jobs requiring native Korean
+- Reward SQL, analytics, BI, ML roles
 """
 
-def evaluate_offer(row):
+
+def evaluate_offer(row, cv):
+
     prompt = PROMPT_TEMPLATE.format(
-        technologies=", ".join(USER_PROFILE["technologies"]),
-        preferred_roles=", ".join(USER_PROFILE["preferred_roles"]),
-        preferred_districts=", ".join(USER_PROFILE["preferred_districts"]),
-        minimum_salary=USER_PROFILE["minimum_salary_krw"],
+        cv=cv,
         company=row.get("company", "N/D"),
         title=row.get("title", "N/D"),
         location=row.get("location", "N/D"),
@@ -55,7 +61,7 @@ def evaluate_offer(row):
     )
 
     message = client.messages.create(
-        model="claude-haiku-4-5-20251001",  # cheaper/faster model, sufficient for this repetitive task
+        model="claude-haiku-4-5-20251001",
         max_tokens=300,
         messages=[{"role": "user", "content": prompt}]
     )
@@ -65,7 +71,6 @@ def evaluate_offer(row):
     try:
         result = json.loads(raw_text)
     except json.JSONDecodeError:
-        # Fallback in case the model adds stray text despite instructions
         result = {
             "role_category": "other",
             "technologies_found": [],
@@ -73,7 +78,7 @@ def evaluate_offer(row):
             "foreigner_friendly_signal": False,
             "salary_meets_minimum": "unknown",
             "match_score": 0,
-            "reasoning": "Could not parse model response"
+            "reasoning": "Parse error"
         }
 
     return result

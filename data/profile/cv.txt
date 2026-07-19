@@ -1,0 +1,84 @@
+JAVIER MOLINER NAVARRO
+Software Engineer | SQL Server · ERP Systems · Data Integration
+Castellón, Spain
++34 640 270 711
+[jamolnav@gmail.com](mailto:jamolnav@gmail.com)
+
+---
+
+PROFESSIONAL SUMMARY
+Software Engineer with 2+ years of hands-on experience designing SQL integration systems between ERP and WMS platforms, developing internal business-critical tools in .NET, and resolving 1,000+ production incidents across a large enterprise group. Full-stack background in React.js and Java (fintech). One year immersed in Korean academic and professional culture at Sejong University, South Korea. Currently pursuing DataCamp, Tableau, and Google Analytics certifications and TOPIK to transition into a data analyst role in the Korean tech industry.
+
+---
+
+CORE SKILLS
+
+Data & Integration:
+SQL Server, T-SQL, Stored Procedures, Triggers, Crystal Reports, Data Cleaning, Excel, ERP–WMS Integration
+
+Development:
+.NET, ASP.NET MVC, React.js, Java, REST APIs, Microservices, AWS (Cognito, Wasabi)
+
+Systems & Tools:
+Microsoft Dynamics 365 ERP, Manhattan SCALE WMS, SQL Server Management Studio, Git, Active Directory
+
+Ways of Working:
+Agile / Scrum, Incident Triage & Root-Cause Analysis, Role-based Access Control, Audit Logging
+
+---
+
+PROFESSIONAL EXPERIENCE
+
+ERP & Database Systems Analyst
+Stn CERÁMICA — STN Group, Spain
+Sept 2024 – Present
+
+* Built a .NET + SQL Server internal tool managing 2,200 product formats and 200,000 SKUs, reducing manual errors and improving data integrity.
+* Implemented role-based access control, audit logging, and Active Directory integration.
+* Developed ERP–WMS synchronization system using triggers and stored procedures for ~1,000 daily freight operations.
+* Resolved 1,000+ ERP and SQL incidents across departments using Agile triage.
+* Designed secure AWS Wasabi storage with SHA-256 hashing.
+* Generated operational reports using SQL Server and Crystal Reports.
+
+Java / React.js Developer
+PaynoPain Solutions S.L. (Fintech)
+Feb 2024 – June 2024
+
+* Implemented Single Sign-On (SSO) using Java and AWS Cognito.
+* Developed frontend features consuming REST APIs in Agile team.
+
+---
+
+EDUCATION
+
+Bachelor's Degree in Computer Engineering
+Universidad Jaume I, Spain (2019 – 2024)
+Includes 1-year exchange at Sejong University, South Korea
+
+Scientific-Technological High School Diploma
+IES El Caminás (2017 – 2019)
+
+---
+
+CERTIFICATIONS & LANGUAGES
+
+Certifications (in progress):
+
+* Data Analyst with Python (DataCamp)
+* Tableau Desktop Specialist
+* Tableau Certified Data Analyst
+* Google Analytics GA4
+
+Languages:
+
+* Spanish (Native)
+* English (Full Professional Proficiency)
+* Korean (Conversational, TOPIK in preparation)
+
+---
+
+ADDITIONAL INFORMATION
+
+* Entrepreneurial Talent Award — RacoonGo!
+* Driving license (B)
+* Immediate availability

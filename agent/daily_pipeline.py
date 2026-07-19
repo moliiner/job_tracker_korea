@@ -10,7 +10,7 @@ from jooble_connector import collect_new_offers
 from llm_judge import evaluate_offer
 from notifier import send_message_telegram
 
-MATCH_THRESHOLD = 40
+MATCH_THRESHOLD = 60
 KEYWORDS = [
     "data analyst Seoul",
     "data scientist Korea",
@@ -19,14 +19,23 @@ KEYWORDS = [
     "AI engineer Korea relocation"
 ]
 
+def load_profile():
+    with open("data/profile/cv.txt", "r", encoding="utf-8") as f:
+        return f.read()
+
 def run_pipeline():
     df = collect_new_offers(KEYWORDS)
 
     # Evaluate every offer with the LLM (classification + scoring in one call)
-    evaluations = df.apply(evaluate_offer, axis=1)
+    profile = load_profile()
+    evaluations = df.apply(lambda row: evaluate_offer(row, profile), axis=1)
     eval_df = pd.json_normalize(evaluations)
 
     df_final = pd.concat([df.reset_index(drop=True), eval_df.reset_index(drop=True)], axis=1)
+
+    # delete errors LLM
+    df_final = df_final[df_final["match_score"].notna()]
+    df_final = df_final[df_final["match_score"] > 0]
 
     df_sorted = df_final.sort_values("match_score", ascending=False)
     top_offers = df_sorted[df_sorted["match_score"] >= MATCH_THRESHOLD]
@@ -50,7 +59,13 @@ def construct_message(df_sorted, top_offers):
             lines.append(f"🟠 *{row['company']}* — {row.get('title', 'N/D')} — {row.get('link', 'N/D')} — Match: {row['match_score']}%")
         return "\n".join(lines)
 
-    lines = [f"*Daily summary — {date.today()}*", f"THRESHOLD = {MATCH_THRESHOLD}%", ""]
+    lines.append(
+        f"🟢 *{row['company']}* — {row.get('title', 'N/D')}\n"
+        f"{row.get('link', 'N/D')}\n"
+        f"Match: {row['match_score']}% | Visa: {row['visa_sponsorship_likelihood']}%\n"
+        f"_{row['reasoning']}_\n"
+    )
+    
     for _, row in top_offers.head(10).iterrows():
         lines.append(f"🟢 *{row['company']}* — {row.get('title', 'N/D')} — {row.get('link', 'N/D')} — Match: {row['match_score']}%")
     return "\n".join(lines)

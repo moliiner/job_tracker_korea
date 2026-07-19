@@ -3,42 +3,41 @@ import os
 import pandas as pd
 from datetime import date
 
-# Allows importing from scraper/ and model/
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "scraper"))
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "model"))
 
-from match_score import calculate_match_score #, clean_technologies
+from jooble_connector import collect_new_offers
+from llm_judge import evaluate_offer
 from notifier import send_message_telegram
 
-# --- Your profile (adjust to your real values) ---
-TECHNOLOGIES = ["Python", "SQL", "Tableau", "AWS", "Docker", "Pandas", "PyTorch", "BI", "TensorFlow"]
-PREFERRED_ROLE = "analyst"
-PREFERRED_DISTRICTS = ["Seoul", "Gangnam", "Pangyo", "Seongsu"]
-MINIMUM_SALARY = 30000000  # 30 million KRW
-MATCH_THRESHOLD = 50
+MATCH_THRESHOLD = 40
+KEYWORDS = [
+    "data analyst Seoul",
+    "data scientist Korea",
+    "AI engineer Seoul",
+    "data analyst visa sponsorship",
+    "AI engineer Korea relocation"
+]
 
 def run_pipeline():
-    df = pd.read_csv("data/processed/processed_offers.csv")
+    df = collect_new_offers(KEYWORDS)
 
-    df["match_score"] = df.apply(
-        lambda row: calculate_match_score(
-            row, TECHNOLOGIES, PREFERRED_ROLE, PREFERRED_DISTRICTS, MINIMUM_SALARY
-        ),
-        axis=1
-    )
+    # Evaluate every offer with the LLM (classification + scoring in one call)
+    evaluations = df.apply(evaluate_offer, axis=1)
+    eval_df = pd.json_normalize(evaluations)
 
-    df_sorted = df.sort_values("match_score", ascending=False)
+    df_final = pd.concat([df.reset_index(drop=True), eval_df.reset_index(drop=True)], axis=1)
+
+    df_sorted = df_final.sort_values("match_score", ascending=False)
     top_offers = df_sorted[df_sorted["match_score"] >= MATCH_THRESHOLD]
 
-    # Save history with date, to not lose the record of what was sent each day
+    df_final.to_csv("data/processed/processed_offers.csv", index=False)
     top_offers.to_csv(f"data/processed/alerts_{date.today()}.csv", index=False)
 
     return df_sorted, top_offers
 
 def construct_message(df_sorted, top_offers):
     if top_offers.empty:
-        # No offers reached the threshold: show the top 5 anyway,
-        # marked with 🟠 to make clear they're below the expected minimum
         fallback = df_sorted.head(5)
         lines = [
             f"*Daily summary — {date.today()}*",
@@ -48,16 +47,12 @@ def construct_message(df_sorted, top_offers):
             ""
         ]
         for _, row in fallback.iterrows():
-            lines.append(f"🟠 *{row['company']}* — {row.get('role_title', 'N/D')} — {row.get('link', 'N/D')} — Match: {row['match_score']}%")
+            lines.append(f"🟠 *{row['company']}* — {row.get('title', 'N/D')} — {row.get('link', 'N/D')} — Match: {row['match_score']}%")
         return "\n".join(lines)
 
-    lines = [
-        f"*Daily summary — {date.today()}*",
-        f"THRESHOLD = {MATCH_THRESHOLD}%",
-        ""
-    ]
+    lines = [f"*Daily summary — {date.today()}*", f"THRESHOLD = {MATCH_THRESHOLD}%", ""]
     for _, row in top_offers.head(10).iterrows():
-        lines.append(f"🟢 *{row['company']}* — {row.get('role_title', 'N/D')} — {row.get('link', 'N/D')} — Match: {row['match_score']}%")
+        lines.append(f"🟢 *{row['company']}* — {row.get('title', 'N/D')} — {row.get('link', 'N/D')} — Match: {row['match_score']}%")
     return "\n".join(lines)
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@ name: Daily job tracker
 
 on:
   schedule:
-    - cron: "5 10 * * *"   # "0 0 * * *" 9am Korea hour (KST = UTC+9)
+    - cron: "0 7 * * *"   # "0 0 * * *" 9am Korea hour (KST = UTC+9)
   workflow_dispatch:        # it allows you to run it manually as well, for testing
 
 jobs:
@@ -24,6 +24,8 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+          #ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python agent/daily_pipeline.py
 
       - name: Save results as artifact

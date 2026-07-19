@@ -1,7 +1,7 @@
 ﻿altair==6.2.2
+#anthropic==0.4.0
 anyio==4.14.2
 attrs==26.1.0
-beautifulsoup4==4.15.0
 blinker==1.9.0
 cachetools==7.1.4
 certifi==2026.6.17
@@ -15,7 +15,6 @@ httptools==0.8.0
 idna==3.18
 itsdangerous==2.2.0
 Jinja2==3.1.6
-joblib==1.5.3
 jsonschema==4.26.0
 jsonschema-specifications==2025.9.1
 MarkupSafe==3.0.3
@@ -33,7 +32,6 @@ python-multipart==0.0.32
 referencing==0.37.0
 requests==2.34.2
 rpds-py==2026.6.3
-scikit-learn==1.9.0
 scipy==1.18.0
 six==1.17.0
 smmap==5.0.3

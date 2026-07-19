@@ -1,4 +1,4 @@
-# 🧠 Job Tracker AI — CV-Driven Job Matching Pipeline
+# 🧠 Job Tracker Korea — AI CV-Driven Job Matching Pipeline
 
 Automated job discovery and ranking system that collects job offers, evaluates them using an LLM (Anthropic), and sends daily personalized alerts based on your **real CV**.
 

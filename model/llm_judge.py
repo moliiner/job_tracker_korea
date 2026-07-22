@@ -1,3 +1,5 @@
+# 🔴 REEMPLAZA COMPLETAMENTE TU llm_judge.py POR ESTO
+
 import anthropic
 import json
 import os
@@ -13,40 +15,28 @@ CANDIDATE CV:
 {cv}
 
 IMPORTANT CONTEXT:
-- Candidate wants to transition into Data Analyst / Data Scientist / AI Engineer roles
-- Candidate is targeting South Korea (Seoul, Pangyo, Gangnam)
-- Candidate may need visa sponsorship
-- Prioritize international-friendly companies
+- Candidate wants Data / AI roles
+- Target: South Korea
+- May need visa sponsorship
 
 JOB OFFER:
 Company: {company}
 Title: {title}
 Location: {location}
 Description: {description}
+Remote: {remote}
 
-Evaluate this offer and respond with ONLY a JSON object:
+Respond ONLY with valid JSON:
 
 {{
   "role_category": "analyst" | "scientist" | "ai_engineer" | "other",
   "technologies_found": [],
-  "visa_sponsorship_likelihood": 0-100,
-  "foreigner_friendly_signal": true | false,
-  "salary_meets_minimum": true | false | "unknown",
-  "match_score": 0-100,
-  "reasoning": "short explanation"
+  "visa_sponsorship_likelihood": 0,
+  "foreigner_friendly_signal": false,
+  "salary_meets_minimum": "unknown",
+  "match_score": 0,
+  "reasoning": ""
 }}
-
-SCORING RULES:
-- 35% tech overlap with CV
-- 30% visa likelihood
-- 20% role alignment (DATA roles prioritized)
-- 10% location (Korea preferred)
-- 5% salary
-
-STRICT RULES:
-- Penalize non-data roles heavily
-- Penalize jobs requiring native Korean
-- Reward SQL, analytics, BI, ML roles
 """
 
 
@@ -57,7 +47,8 @@ def evaluate_offer(row, cv):
         company=row.get("company", "N/D"),
         title=row.get("title", "N/D"),
         location=row.get("location", "N/D"),
-        description=row.get("description", "")
+        description=row.get("description", "N/D"),
+        remote=row.get("remote", "N/D")
     )
 
     message = client.messages.create(
@@ -70,7 +61,7 @@ def evaluate_offer(row, cv):
 
     try:
         result = json.loads(raw_text)
-    except json.JSONDecodeError:
+    except:
         result = {
             "role_category": "other",
             "technologies_found": [],

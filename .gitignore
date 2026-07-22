@@ -5,4 +5,4 @@ __pycache__/
 data/*
 !data/profile/
 !data/profile/cv.txt
-archived/*
+archived/

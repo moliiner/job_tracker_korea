@@ -1,119 +1,211 @@
-# 🧠 Job Tracker Korea — AI CV-Driven Job Matching Pipeline
+# 🚀 AI Job Tracker — South Korea
 
-Automated job discovery and ranking system that collects job offers, evaluates them using an LLM (Anthropic), and sends daily personalized alerts based on your **real CV**.
-
----
-
-## 🚀 Overview
-
-This project is a fully automated pipeline that:
-
-1. Fetches job offers from Jooble API
-2. Evaluates each offer using an LLM (Anthropic Claude)
-3. Scores each job based on your **actual CV**
-4. Filters top matches
-5. Sends a daily summary via Telegram
-
-👉 The key feature: **match scoring is personalized using your CV**, not generic rules.
+An automated job tracking pipeline that collects, filters, evaluates, and ranks job offers using AI, with a focus on **Data & AI roles in South Korea**.
 
 ---
 
-## 🧩 Architecture
+## 📌 Overview
 
-```
-Jooble API → Data Collection → LLM Evaluation → Scoring → CSV Storage → Telegram Alerts
-```
+This project is designed to:
+
+* 🔎 Scrape job offers from Jooble API
+* 🧠 Evaluate each offer using an LLM (Claude)
+* 📊 Score offers based on relevance to your CV
+* 💸 Minimize API cost by evaluating only new offers
+* 📬 Send daily summaries via Telegram
+* 🗂 Persist historical data for tracking and analysis
 
 ---
 
-## 📁 Project Structure
+## ⚙️ Architecture
 
 ```
-arc_b_job_tracker/
+project/
 │
 ├── scraper/
-│   └── jooble_connector.py       # Fetch job offers from Jooble API
+│   └── jooble_connector.py      # Fetch + normalize job offers
 │
 ├── model/
-│   └── llm_judge.py              # LLM evaluation (Anthropic)
+│   └── llm_judge.py             # LLM-based evaluation
 │
 ├── agent/
-│   ├── daily_pipeline.py         # Main orchestration pipeline
-│   └── notifier.py               # Telegram notifications
+│   └── daily_pipeline.py        # Main orchestration pipeline
 │
 ├── data/
-│   ├── raw/
-│   │   └── offers.csv            # Raw job offers (historical)
-│   │
-│   ├── processed/
-│   │   ├── processed_offers.csv  # Evaluated offers
-│   │   └── alerts_YYYY-MM-DD.csv # Daily filtered results
-│   │
-│   └── profile/
-│       └── cv.txt                # 🔥 YOUR CV (core of the system)
+│   ├── raw/                    # Raw collected offers
+│   ├── processed/              # Evaluated + scored offers
+│   └── profile/                # Candidate CV
 │
-├── .github/workflows/
-│   └── daily_job.yml             # Daily automation (optional)
-│
-├── requirements.txt
-└── README.md
+└── notifier.py                 # Telegram notifications
 ```
 
 ---
 
-## 🧠 Core Concept: CV-Driven Scoring
+## 🔄 Pipeline Flow
 
-Unlike traditional job scrapers, this system:
+1. **Collect Offers**
 
-* Uses your **real CV (cv.txt)** as input
-* Evaluates each job with an LLM
-* Produces a personalized `match_score (0–100)`
+   * Uses Jooble API with multiple keyword queries
+   * Filters for Korean locations
+   * Stores results in `data/raw/offers.csv`
 
-### Scoring Logic
+2. **Track Fresh Data**
 
-* 35% → Technology overlap
-* 30% → Visa sponsorship likelihood
-* 20% → Role alignment (Data roles prioritized)
-* 10% → Location match (Korea preferred)
-* 5% → Salary fit
+   * Adds `date_tracked` (execution date)
+   * Avoids reliance on unreliable external timestamps
+
+3. **Filter Offers**
+
+   * Keeps only relevant roles (data / AI related)
+   * Optional keyword-based filtering
+
+4. **Evaluate with LLM**
+
+   * Uses Claude (Anthropic API)
+   * Extracts structured insights:
+
+     * Role category
+     * Technologies
+     * Visa likelihood
+     * Match score
+
+5. **Score Offers**
+
+   * Custom scoring system:
+
+     * Tech overlap (35%)
+     * Visa likelihood (30%)
+     * Role alignment (20%)
+     * Location (10%)
+     * Salary (5%)
+
+6. **Store Results**
+
+   * Avoids re-processing already evaluated offers
+   * Saves to `processed_offers.csv`
+
+7. **Notify**
+
+   * Sends top matches via Telegram
+   * Includes fallback top 5 if none meet threshold
 
 ---
 
-## 📄 CV Integration (Critical)
+## 📊 Scoring Logic
 
-The system reads your CV from:
-
+```text
+Match Score = 
+  Tech overlap        (max 35)
++ Visa likelihood     (max 30)
++ Role alignment      (max 20)
++ Location relevance  (max 10)
++ Salary              (max 5)
 ```
-data/profile/cv.txt
-```
 
-This file is injected into the LLM prompt and directly affects:
+---
 
+## 🧠 LLM Evaluation
+
+Each job offer is analyzed with a structured prompt:
+
+* Extracts relevant technologies
+* Detects visa sponsorship signals
+* Evaluates role fit
+* Produces a JSON output
+
+Fallback handling ensures robustness if parsing fails.
+
+---
+
+## 💡 Cost Optimization
+
+To minimize LLM API usage:
+
+* ✅ Only evaluates **new offers**
+* ✅ Uses `link` as unique identifier
+* ✅ Filters by `date_tracked`
+* ✅ Skips empty or irrelevant data
+
+---
+
+## 📁 Data Fields
+
+### Raw Data (`offers.csv`)
+
+* company
+* title
+* location
+* description
+* link
+* source
+* date_posted
+* date_tracked
+
+### Processed Data
+
+* role_category
+* technologies_found
+* visa_sponsorship_likelihood
+* foreigner_friendly_signal
+* salary_meets_minimum
 * match_score
-* role classification
-* visa likelihood
-* final ranking
-
-👉 Without this file, the system will fail.
+* reasoning
 
 ---
 
-## ⚙️ Setup
+## 🖥 Example Console Output
+
+```
+🔎 Evaluating 1/5
+🏢 MinIO
+💼 Site Reliability Engineer
+🌍 South Korea
+🔗 https://...
+----------------------------------------
+✅ Match: 72%
+🛂 Visa: 65%
+🧠 Strong data infrastructure + AI relevance
+```
+
+---
+
+## 📬 Telegram Alerts
+
+Daily message format:
+
+```
+🟢 Company — Role
+Link
+Match: 75% | Visa: 60%
+Reasoning...
+```
+
+Fallback:
+
+```
+No offers reached threshold → showing top 5
+```
+
+---
+
+## 🧪 Setup
 
 ### 1. Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install pandas requests python-dotenv anthropic
 ```
 
 ---
 
-### 2. Create `.env` file
+### 2. Environment variables
 
-```bash
+Create `.env`:
+
+```env
 JOOBLE_API_KEY=your_key
 ANTHROPIC_API_KEY=your_key
-TELEGRAM_TOKEN=your_token
+TELEGRAM_BOT_TOKEN=your_token
 TELEGRAM_CHAT_ID=your_chat_id
 ```
 
@@ -121,17 +213,13 @@ TELEGRAM_CHAT_ID=your_chat_id
 
 ### 3. Add your CV
 
-Create:
-
 ```
 data/profile/cv.txt
 ```
 
-Paste your CV in plain text format.
-
 ---
 
-## ▶️ Run the pipeline
+### 4. Run pipeline
 
 ```bash
 python agent/daily_pipeline.py
@@ -139,121 +227,39 @@ python agent/daily_pipeline.py
 
 ---
 
-## 📊 Output
+## 🎯 Target Use Case
 
-### Full dataset
-
-```
-data/processed/processed_offers.csv
-```
-
-Includes:
-
-* job data
-* LLM evaluation
-* match_score
-* reasoning
+* Data professionals targeting **South Korea**
+* Candidates needing **visa sponsorship**
+* Automated job discovery + ranking
+* Daily monitoring with minimal effort
 
 ---
 
-### Daily alerts
+## 🔮 Future Improvements
 
-```
-data/processed/alerts_YYYY-MM-DD.csv
-```
-
-Includes:
-
-* only top matches above threshold
+* 🌐 Multi-source scraping (LinkedIn, Indeed)
+* 🧠 Embedding-based matching (vector similarity)
+* 📈 Dashboard (Streamlit / Supabase)
+* 🔔 Real-time alerts
+* 🧹 Deduplication via semantic similarity
 
 ---
 
-## 📲 Telegram Notifications
+## ⚠️ Notes
 
-Daily message includes:
-
-* Top job matches
-* Match score (%)
-* Visa likelihood
-* Short reasoning
-
-Example:
-
-```
-🟢 Company X — Data Analyst
-Link: ...
-Match: 78% | Visa: 65%
-"Strong SQL match but unclear visa sponsorship"
-```
-
----
-
-## 🔄 Automation (Optional)
-
-Use GitHub Actions:
-
-```
-.github/workflows/daily_job.yml
-```
-
-Runs the pipeline automatically every day.
-
----
-
-## ⚠️ Important Notes
-
-* This project is for **personal use only**
-* Do not redistribute job data from Jooble
-* Respect API rate limits
-* Do not expose your `.env` file
-
----
-
-## 🧪 Testing Without Jooble API
-
-You can simulate data:
-
-```python
-df = pd.DataFrame([
-    {
-        "company": "Test Company",
-        "title": "Data Analyst",
-        "location": "Seoul",
-        "description": "SQL and Tableau required",
-        "link": "http://example.com"
-    }
-])
-```
-
----
-
-## 🚀 Future Improvements
-
-* Deduplication of offers
-* Application tracking (applied / rejected)
-* Multi-user support
-* Dashboard analytics
-* Hybrid scoring (LLM + deterministic rules)
-
----
-
-## 🧠 Tech Stack
-
-* Python
-* Pandas
-* Anthropic Claude API
-* Jooble API
-* Telegram Bot API
-* GitHub Actions
-
----
-
-## 🎯 Goal
-
-Automatically identify and prioritize the **best job opportunities for you**, based on your real profile — without manual searching.
+* Jooble API may return outdated offers → handled via `date_tracked`
+* LLM output is probabilistic → scoring is normalized locally
+* Some fields may be `"N/D"` if not available
 
 ---
 
 ## 📄 License
 
-MIT
+Personal project — adapt as needed.
+
+---
+
+## 👤 Author
+
+Built for optimizing job search with AI-driven filtering and evaluation.

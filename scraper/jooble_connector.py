@@ -61,6 +61,7 @@ def collect_new_offers(keywords_list):
 
     # Ensure directory exists (important for GitHub Actions)
     os.makedirs("data/raw", exist_ok=True)
+    os.makedirs("data/processed", exist_ok=True)
 
     df_combined.to_csv("data/raw/offers.csv", index=False)
 

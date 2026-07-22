@@ -59,6 +59,9 @@ def collect_new_offers(keywords_list):
     df_combined = pd.concat([df_existing, df_new], ignore_index=True)
     df_combined = df_combined.drop_duplicates(subset="link", keep="last")
 
+    # Ensure directory exists (important for GitHub Actions)
+    os.makedirs("data/raw", exist_ok=True)
+
     df_combined.to_csv("data/raw/offers.csv", index=False)
 
     return df_combined

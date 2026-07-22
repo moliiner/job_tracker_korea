@@ -2,6 +2,6 @@ venv/
 .env
 __pycache__/
 *.pyc
-data/raw/*.csv
-data/processed/*.csv
-data/profile/
+data/*
+!data/profile/
+!data/profile/cv.txt

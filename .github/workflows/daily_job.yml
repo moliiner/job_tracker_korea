@@ -2,7 +2,7 @@ name: Daily job tracker
 
 on:
   schedule:
-    - cron: "0 7 * * *"   # "0 0 * * *" 9am Korea hour (KST = UTC+9)
+    - cron: "0 10 * * *"   # "0 0 * * *" 9am Korea hour (KST = UTC+9)
   workflow_dispatch:        # it allows you to run it manually as well, for testing
 
 jobs:

@@ -292,6 +292,45 @@
     color: var(--text-dim);
   }
 
+  .offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+  }
+
+  .offer-card {
+    display: block;
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .offer-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+  .offer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+
+  .offer-score { font-weight: 600; }
+  .offer-card.high .offer-score { color: #5fd996; }
+  .offer-card.mid .offer-score { color: var(--accent); }
+  .offer-card.low .offer-score { color: #8494a3; }
+
+  .offer-title { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+  .offer-meta { font-family: var(--mono); font-size: 12px; color: var(--text-dim); margin-bottom: 8px; }
+  .offer-reasoning { font-size: 13px; color: var(--text-dim); margin: 0; }
+  .loading-msg { color: var(--text-dim); font-size: 14px; }
+
   @media (max-width: 720px) {
     .layers { grid-template-columns: 1fr; }
     header { padding: 64px 0 48px; }
@@ -375,6 +414,16 @@
   </div>
 </section>
 
+<section id="latest-matches">
+  <div class="wrap">
+    <div class="kicker" id="last-updated">Loading last run…</div>
+    <h2>Today's best matches</h2>
+    <div id="offers-grid" class="offers-grid">
+      <p class="loading-msg">Loading latest results…</p>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <div class="kicker">Built with</div>
@@ -398,6 +447,46 @@
     <p class="note">A personal, non-commercial project. Not affiliated with any employer.</p>
   </div>
 </footer>
+
+<script>
+async function loadOffers() {
+  try {
+    const res = await fetch('data/offers.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('not found');
+    const data = await res.json();
+
+    const updated = new Date(data.generated_at);
+    document.getElementById('last-updated').textContent =
+      `Last updated ${updated.toLocaleDateString()} ${updated.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'})} · threshold ${data.threshold}%`;
+
+    const grid = document.getElementById('offers-grid');
+    const offers = data.top_offers.length ? data.top_offers : data.today_all.slice(0, 5);
+
+    if (!offers.length) {
+      grid.innerHTML = '<p class="loading-msg">No offers tracked yet today.</p>';
+      return;
+    }
+
+    grid.innerHTML = offers.map(o => {
+      const level = o.match_score >= 70 ? 'high' : o.match_score >= 40 ? 'mid' : 'low';
+      return `
+        <a class="offer-card ${level}" href="${o.link}" target="_blank" rel="noopener">
+          <div class="offer-top">
+            <span>${o.company}</span>
+            <span class="offer-score">${o.match_score}%</span>
+          </div>
+          <div class="offer-title">${o.title}</div>
+          <div class="offer-meta">🛂 Visa ${o.visa_likelihood}% · ${o.role_category}</div>
+          <p class="offer-reasoning">${o.reasoning}</p>
+        </a>`;
+    }).join('');
+  } catch (e) {
+    document.getElementById('offers-grid').innerHTML =
+      '<p class="loading-msg">Results not published yet — check back after the next run.</p>';
+  }
+}
+loadOffers();
+</script>
 
 </body>
 </html>

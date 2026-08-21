@@ -26,7 +26,16 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CAREERJET_API_KEY: ${{ secrets.CAREERJET_API_KEY }}
         run: python agent/daily_pipeline.py
+
+      - name: Publish results to the website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/offers.json docs/data/careerjet_offers.json
+          git diff --staged --quiet || git commit -m "Update daily results [skip ci]"
+          git push
 
       - name: Save results as artifact
         uses: actions/upload-artifact@v4

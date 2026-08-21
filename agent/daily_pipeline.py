@@ -167,6 +167,10 @@ def log_counts_per_source(df, stage):
 def run_pipeline():
     logger.info("Starting pipeline...")
 
+    # ✅ Asegurar directorios necesarios (IMPORTANTE para GitHub Actions)
+    os.makedirs("data/processed", exist_ok=True)
+    os.makedirs("docs/data", exist_ok=True)
+
     # --- 1. Recolección (cada conector persiste su histórico y devuelve SOLO ofertas nuevas de hoy) ---
     df_jooble = collect_jooble_offers(KEYWORDS)
     df_careerjet = collect_careerjet_offers(KEYWORDS)

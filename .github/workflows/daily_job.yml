@@ -5,6 +5,9 @@ on:
     - cron: "0 10 * * *"   # "0 0 * * *" 9am Korea hour (KST = UTC+9)
   workflow_dispatch:        # it allows you to run it manually as well, for testing
 
+permissions:
+  contents: write
+
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
@@ -12,7 +15,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
+        with:
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"

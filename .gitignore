@@ -6,3 +6,4 @@ data/*
 !data/profile/
 !data/profile/cv.txt
 archived/
+docs/data/*

@@ -61,11 +61,11 @@ project/
 
 ## 🌐 Data Sources — Current & Planned
 
-| Source       | Status     | Notes                                 |
-| -------------| ---------- | ------------------------------------- |
-| **Jooble**   | ✅ Active  | Aggregator with Korea coverage        |
-| **Saramin**  | ⏳ Pending | Requires approval                     |
-| **Work-Net** | 🔜 Planned | Requires Korean identity verification |
+| Source         | Status      | Notes                                 |
+| -------------- | ----------- | ------------------------------------- |
+| **Jooble**     | ✅ Active  | Aggregator with Korea coverage        |
+| **Careerjet**  | ✅ Active  | Aggregator with Korea coverage        |
+| **Work-Net**   | 🔜 Planned | Requires Korean identity verification |
 
 ---
 

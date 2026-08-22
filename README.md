@@ -1,18 +1,29 @@
-# 🚀 AI Job Tracker — South Korea
+<p align="center">
+  <img src="./assets/job_tracker_korea.png"
+       width="180"
+       height="180"
+       style="border-radius: 50%; object-fit: cover; border: 2px solid #ddd;" />
+</p>
 
-An automated job tracking pipeline that collects, filters, evaluates, and ranks job offers using AI, with a focus on **Data & AI roles in South Korea**.
+<h1 align="center">
+   <strong>🇰🇷 AI Job Tracker — South Korea</strong>
+</h1>
 
----
+
+<p align="center">
+  An automated job tracking pipeline that collects, filters, evaluates, and ranks job offers using AI, with a focus on Data & AI roles in South Korea.
+</p>
+
 
 ## 📌 Overview
 
 This project is designed to:
 
-* 🔎 Fetch job offers via official job-search APIs (not scraping — see [Legal approach](#-legal-approach))
+* 🔎 Fetch job offers via official job-search APIs *(no scraping — see Legal approach)*
 * 🧠 Evaluate each offer using an LLM (Claude)
 * 📊 Score offers based on relevance to your CV
-* 💸 Minimize API cost by evaluating only new offers, once
-* 📬 Send daily Telegram summaries, prioritizing what's new **today**
+* 💸 Minimize API cost by evaluating only new offers
+* 📬 Send daily Telegram summaries prioritizing **today's opportunities**
 * 🗂 Persist historical data for tracking and analysis
 
 ---
@@ -21,89 +32,91 @@ This project is designed to:
 
 ```
 project/
-│
+
 ├── scraper/
-│   └── jooble_connector.py      # Fetch + normalize job offers (Jooble API — active)
-│
+│   └── jooble_connector.py      # Fetch + normalize job offers
+
 ├── model/
 │   └── llm_judge.py             # LLM-based evaluation
-│
+
 ├── agent/
 │   ├── daily_pipeline.py        # Main orchestration pipeline
 │   └── notifier.py              # Telegram notifications
-│
+
 ├── data/
-│   ├── raw/                     # Raw collected offers
-│   ├── processed/               # Evaluated + scored offers (full history)
-│   └── profile/                 # Candidate CV
-│
-├── archived/                    # Earlier version of the project — see "Project history"
+│   ├── raw/                    # Raw collected offers
+│   ├── processed/              # Evaluated + scored offers
+│   └── profile/                # Candidate CV
+
+├── archived/                   # Previous ML-based version
 │   ├── basic_scraper.py
 │   ├── match_score.py
 │   └── train_classifier.py
-│
+
 └── dashboard/
-    └── app.py                   # Streamlit dashboard
+    └── app.py                  # Streamlit dashboard
 ```
 
 ---
 
-## 🌐 Data sources — current and planned
+## 🌐 Data Sources — Current & Planned
 
-Access to Korean job-platform APIs has turned out to be its own small negotiation per platform, so the project is built to support multiple sources rather than depend on just one:
-
-| Source | Status | Notes |
-|---|---|---|
-| **Jooble** | ✅ Active | International aggregator with Korea coverage; no business registration required; results are filtered in code to confirm they're Korea-based, since the API has no dedicated country parameter |
-| **Saramin** | ⏳ Application submitted, awaiting approval | Access key generated after login, once approved |
-| **Wanted** | ⏳ Application submitted, likely blocked | Requires a Korean Business Registration Number; contacted support to ask about individual access |
-| **Work-Net** (data.go.kr) | 🔜 Planned, blocked until relocation | Requires identity verification tied to a Korean phone number / ARC — can't be completed from outside Korea |
+| Source       | Status     | Notes                                 |
+| ------------ | ---------- | ------------------------------------- |
+| **Jooble**   | ✅ Active   | Aggregator with Korea coverage        |
+| **Saramin**  | ⏳ Pending  | Requires approval                     |
+| **Work-Net** | 🔜 Planned | Requires Korean identity verification |
 
 ---
 
-## ⚖️ Legal approach
+## ⚖️ Legal Approach
 
-Job data is sourced **exclusively through official, sanctioned APIs** — never by scraping job board websites directly. Most Korean job platforms (JobKorea, Saramin, Wanted, KOWORK) explicitly prohibit automated scraping/crawling in their terms of service, and Korean courts have previously ruled against unauthorized scraping of job listing databases (e.g. the Saramin vs. JobKorea case). Using each platform's official API — even when that means waiting for manual approval — is the deliberate alternative to scraping, not a shortcut around it.
+All job data is sourced **exclusively via official APIs**.
+
+No scraping is used.
+
+This ensures:
+
+* Compliance with platform Terms of Service
+* Alignment with Korean legal precedents
+* Long-term sustainability of the project
 
 ---
 
 ## 🔄 Pipeline Flow
 
-1. **Collect Offers**
+### 1. Collect Offers
 
-   * Queries active APIs (currently Jooble) with multiple keyword queries
-   * Filters for Korean locations
-   * Stores results in `data/raw/offers.csv`
+* Queries APIs (Jooble & Careerjet currently)
+* Filters Korea-based roles
+* Stores data in `data/raw/offers.csv`
 
-2. **Track Fresh Data**
+### 2. Track Fresh Data
 
-   * Adds `date_tracked` (execution date) to every offer
-   * Avoids reliance on unreliable/missing external timestamps
+* Adds `date_tracked`
+* Avoids unreliable external timestamps
 
-3. **Filter Offers**
+### 3. Filter Offers
 
-   * Keeps only relevant roles (data / AI related)
-   * Skips offers already evaluated in a previous run (by `link`), so the LLM never re-evaluates — and never re-charges for — the same offer twice
+* Keeps Data / AI roles only
+* Skips already processed offers
 
-4. **Evaluate with LLM**
+### 4. LLM Evaluation
 
-   * Uses Claude (Anthropic API) alongside the candidate's CV as context
-   * Extracts structured signals:
+Extracts structured signals:
 
-     * Role category
-     * Technologies found
-     * Visa sponsorship likelihood
-     * Foreigner-friendly signal
-     * Education fit (Computer Science / Computer Engineering / IT Engineering)
-     * Required languages (English, Spanish, Korean, etc.)
+* Role category
+* Technologies
+* Visa sponsorship likelihood
+* Foreigner-friendly signal
+* Education fit
+* Languages required
 
-5. **Score Offers**
+### 5. Scoring (Deterministic)
 
-   * Deterministic scoring computed in Python from the LLM's extracted signals (not left to the LLM to self-score, for reproducibility):
-
-```text
+```
 Match Score =
-  Tech overlap          (max 25)
+  Tech overlap           (max 25)
 + Visa likelihood        (max 25)
 + Role alignment         (max 15)
 + Location relevance     (max 10)
@@ -112,57 +125,64 @@ Match Score =
 + Language fit           (max 10)
 ```
 
-6. **Store Results**
+### 6. Store Results
 
-   * Full evaluation history saved to `processed_offers.csv`
-   * Never re-processes already-evaluated offers
+* Saved in `processed_offers.csv`
+* Never re-evaluated twice
 
-7. **Notify**
+### 7. Notify
 
-   * Sends **today's** top matches via Telegram — offers from previous days are never resurfaced as if they were new
-   * Falls back to today's top 5 if none meet the threshold
-   * If no new offers were found at all today, says so explicitly instead of showing nothing or old data
+* Daily Telegram alerts with **new offers only**
+* Smart fallback messaging if needed
 
 ---
 
 ## 🧠 LLM Evaluation
 
-Each job offer is analyzed with a structured prompt that instructs the model to respond with raw JSON only (no markdown fences). Robust parsing strips any stray code fences before decoding, and only genuine JSON errors trigger the fallback — other errors (network, auth) are allowed to surface instead of being silently swallowed.
+* Uses **Claude (Anthropic API)**
+* Strict JSON output parsing
+* Robust error handling
+* Deterministic scoring outside the LLM
 
 ---
 
 ## 💡 Cost Optimization
 
-To minimize LLM API usage:
-
-* ✅ Only evaluates **new offers**, identified by `link`
-* ✅ Never re-evaluates offers already present in `processed_offers.csv`
-* ✅ Skips empty or irrelevant data before calling the LLM
-* ✅ Uses Claude Haiku (the cheapest current-generation model) — sufficient for structured extraction, no need for a larger model
+* ✅ Evaluates only **new offers**
+* ✅ No duplicate LLM calls
+* ✅ Filters irrelevant data early
+* ✅ Uses **Claude Haiku 4.5** (cost-efficient)
 
 ---
 
 ## 📁 Data Fields
 
-### Raw Data (`offers.csv`)
+### Raw (`offers.csv`)
 
 * company, title, location, description, link, source, date_tracked
 
-### Processed Data
+### Processed
 
-* role_category, technologies_found, visa_sponsorship_likelihood, foreigner_friendly_signal, salary_meets_minimum, education_match, languages_required, match_score, reasoning
+* role_category
+* technologies_found
+* visa_sponsorship_likelihood
+* foreigner_friendly_signal
+* salary_meets_minimum
+* education_match
+* languages_required
+* match_score
+* reasoning
 
 ---
 
-## 🖥 Example Console Output
+## 🖥 Example Output
 
 ```
 🔎 Evaluating 1/5
 🏢 MinIO
 💼 Site Reliability Engineer
 🌍 South Korea
-🔗 https://...
-----------------------------------------
+
 ✅ Match: 72%
 🛂 Visa: 65%
 🧠 Strong data infrastructure + AI relevance
@@ -172,7 +192,7 @@ To minimize LLM API usage:
 
 ## 📬 Telegram Alerts
 
-Daily message format:
+**Daily format:**
 
 ```
 🟢 Company — Role
@@ -181,23 +201,24 @@ Match: 75% | Visa: 60%
 Reasoning...
 ```
 
-Fallback (today has offers, none reach the threshold):
+Fallback cases:
 
-```
-🟠 No offers reached the threshold today. Showing today's top 5 anyway.
-```
-
-Fallback (no new offers found today at all):
-
-```
-⚪ No new offers were found today. Best matches from previous days, for reference.
-```
+* 🟠 No offers met threshold → show top 5
+* ⚪ No new offers → notify explicitly
 
 ---
 
-## 📜 Project history — why there's an `archived/` folder
+## 📜 Project History
 
-The first version of this project collected offers manually, extracted signals with regex, and trained a Random Forest classifier (`train_classifier.py`) on that manually-labeled data. That version is kept in `archived/` rather than deleted: it documents a valid earlier approach, retired for a concrete reason — with only ~100 manually-collected offers and just 1 positive example of "mentions visa sponsorship," there wasn't enough labeled data to train a classifier that learned anything beyond predicting the majority class. The project moved to an LLM-based evaluator instead, which doesn't require labeled training data to interpret free-text job descriptions.
+Earlier version (in `archived/`) used:
+
+* Manual data collection
+* Regex extraction
+* Random Forest classifier
+
+It was replaced due to **insufficient labeled data**, making ML ineffective.
+
+LLMs removed the need for labeled datasets.
 
 ---
 
@@ -211,17 +232,11 @@ pip install -r requirements.txt
 
 ### 2. Environment variables
 
-Create `.env` in the project root (never commit this file):
-
 ```env
 JOOBLE_API_KEY=your_key
 ANTHROPIC_API_KEY=your_key
 TELEGRAM_TOKEN=your_bot_token
 TELEGRAM_CHAT_ID=your_chat_id
-# Added as each source gets approved:
-# SARAMIN_ACCESS_KEY=
-# WANTED_API_KEY=
-# WORKNET_API_KEY=
 ```
 
 ### 3. Add your CV
@@ -230,13 +245,13 @@ TELEGRAM_CHAT_ID=your_chat_id
 data/profile/cv.txt
 ```
 
-### 4. Run the pipeline
+### 4. Run pipeline
 
 ```bash
 python agent/daily_pipeline.py
 ```
 
-### 5. Run the dashboard
+### 5. Run dashboard
 
 ```bash
 streamlit run dashboard/app.py
@@ -248,26 +263,25 @@ streamlit run dashboard/app.py
 
 * Data / AI professionals targeting **South Korea**
 * Candidates needing **visa sponsorship**
-* Automated job discovery + ranking, without re-checking the same listings by hand every day
-* Daily monitoring with minimal manual effort
+* Automated job tracking with **zero manual repetition**
 
 ---
 
 ## 🔮 Future Improvements
 
-* 🌐 Additional sources: Saramin, Wanted, Work-Net (pending approvals — see [Data sources](#-data-sources--current-and-planned))
-* 🧠 Embedding-based matching (vector similarity) as an alternative/complement to LLM scoring
-* 📈 Public dashboard deployment (Hugging Face Spaces / Streamlit Community Cloud)
-* 🔔 Real-time alerts instead of a daily batch
-* 🧹 Deduplication via semantic similarity, for near-duplicate postings across sources
+* Additional APIs (Work-Net)
+* Embedding-based matching
+* Public dashboard deployment
+* Real-time alerts
+* Semantic deduplication
 
 ---
 
 ## ⚠️ Notes
 
-* Jooble's API has no explicit country filter; Korea-only filtering is enforced afterward in code by checking the offer's location text — a reasonable but not airtight safeguard
-* LLM output is probabilistic by nature — the final match score is computed deterministically in Python from the LLM's extracted signals, not left to the LLM to self-score, so identical inputs always produce the same score
-* Some fields may show `"N/D"` if not available in the source data
+* Jooble lacks strict country filtering → handled in code
+* LLM outputs are probabilistic → scoring is deterministic
+* Some fields may show `"N/D"` if unavailable
 
 ---
 
@@ -279,4 +293,12 @@ Personal project — adapt as needed.
 
 ## 👤 Author
 
-Built by Javier Moliner Navarro, as part of relocating to Seoul and optimizing the job search with an AI-driven tracking and evaluation pipeline.
+Built by **Javier Moliner Navarro**, as part of relocating to Seoul 🇰🇷 and optimizing the job search with an AI-driven tracking and evaluation pipeline.
+
+---
+
+## ⭐ Support
+
+If you find this useful, consider giving the project a star ⭐
+
+

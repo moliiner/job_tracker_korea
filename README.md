@@ -62,9 +62,9 @@ project/
 ## 🌐 Data Sources — Current & Planned
 
 | Source       | Status     | Notes                                 |
-| ------------ | ---------- | ------------------------------------- |
-| **Jooble**   | ✅ Active   | Aggregator with Korea coverage        |
-| **Saramin**  | ⏳ Pending  | Requires approval                     |
+| -------------| ---------- | ------------------------------------- |
+| **Jooble**   | ✅ Active  | Aggregator with Korea coverage        |
+| **Saramin**  | ⏳ Pending | Requires approval                     |
 | **Work-Net** | 🔜 Planned | Requires Korean identity verification |
 
 ---

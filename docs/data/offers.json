@@ -1,228 +1,98 @@
 {
-  "generated_at": "2026-08-21T18:59:56.557651",
+  "generated_at": "2026-08-22T10:14:25.200331",
   "threshold": 50,
   "top_offers": [
     {
-      "company": "Lunit",
-      "title": "(Seoul) Applied Research Scientist · AI Innovation - 전문연 가능",
-      "link": "https://jobviewtrack.com/v2/K0HbcqokPnBTy1C9UBckS9NBit3t9ZmA6F8CijTd9rcS-TdIhSYrNVgyKv2h7zzdPVjd19YJeZC6i5tdhD4mwrTVnzSSZ-vnczCPtujDb3kQm8wvzS8nz-47mnuZmy7xZlSIUejmaxOnSq54Z424nTf7ajZnADPjxo6LiWGMr_iHz17ywORTk4QXigkwD9mfM1rRJQsOgeNBJjrK91RYgw",
-      "source": "Careerjet",
-      "match_score": 55,
-      "visa_likelihood": 0.75,
-      "role_category": "scientist",
-      "reasoning": "Strong alignment with candidate's stated goal of transitioning into data/AI roles in South Korea. Role emphasizes data and knowledge work within AI context, matching candidate's SQL/data integration background and ongoing Google Data Analytics certification. Lunit is a Seoul-based AI company known for international hiring and visa sponsorship for specialized roles. Candidate's Computer Engineering degree, English proficiency (C1), and conversational Korean (with TOPIK in progress) support candidacy. However, 'Applied Research Scientist' typically requires research publication experience or advanced degree (Master's/PhD) which candidate lacks—current role is junior-level engineering. The Data & Knowledge team focus and large-scale clinical data emphasis align with candidate's ERP-WMS data integration expertise. Candidate's fintech/AWS background and incident management experience demonstrate technical maturity. Main gap: research background and depth in ML/AI theory rather than applied engineering. Immediate Korean language proficiency may be secondary given English-first tech environments in Seoul startups."
+      "company": "Neowiz",
+      "title": "AI Service Engineer (전문연구요원)",
+      "link": "https://jooble.org/jdp/-3561640927211357695",
+      "source": "Jooble",
+      "match_score": 65,
+      "visa_likelihood": 0.8,
+      "role_category": "ai_engineer",
+      "reasoning": "Strong alignment with candidate's AI/data aspirations and Korea target. Neowiz is a major Korean gaming company actively hiring international talent; the '전문연구요원' (Specialized Research Personnel) visa category strongly suggests visa sponsorship for qualified foreigners. Candidate has CS degree, English C1, and conversational Korean (preparing TOPIK). However, significant gaps exist: candidate lacks explicit AI/ML project experience (has data integration and fintech SSO background, not ML/AI implementation), no demonstrated experience with game development or live service systems, and limited evidence of applied AI engineering beyond coursework. The role emphasizes translating academic AI into production gaming systems—a specialized domain requiring hands-on ML implementation experience the CV doesn't showcase. Candidate is pursuing data analytics certifications, not AI/ML specialization. Job description is partially in Korean and highly technical, suggesting preference for Korean speakers or those with deep AI background. Strong cultural/location fit and visa feasibility, but technical domain gap moderates overall score."
     },
     {
-      "company": "NielsenIQ",
-      "title": "Statistical Analyst Manager – Retail Measurement & Modeling",
-      "link": "https://jobviewtrack.com/v2/gnuHwckEtooIG8wyKXUyVqLNldAK2FAC4UnlRA8YMgNsOa8Tn4wQl86wNQqvRz1SEiUu9CJuxEbZfBNPZteUYQ0NUh4m8IcRr1mcy9QAW56Ds_3R70J3NqTB-0HgsitavKtmnLSBX2Kx-kibO2jgMzmaz3521VnqN7PFnqQkU8DbzksmOieeG16qhfPBvnS7NYSKnEecnxRjnSwO83L7zA",
-      "source": "Careerjet",
-      "match_score": 50,
-      "visa_likelihood": 0.6,
-      "role_category": "scientist",
-      "reasoning": "Strong alignment with candidate's transition goal into data science and analytics roles. Role is located in Seoul, matching target geography. Candidate has relevant technical foundation (SQL, data integration, analytics exposure) and is actively pursuing Google Advanced Data Analytics certification. Computer Engineering degree satisfies education requirements. Candidate speaks English fluently and is actively learning Korean (TOPIK preparation), addressing likely language requirements for Seoul-based role. NielsenIQ is multinational company likely to sponsor visas for qualified candidates. Primary gaps: (1) Role explicitly requests 'Senior Data Scientist' with likely 5+ years experience; candidate has 2+ years and is transitioning from software engineering/analytics, not deep ML/modeling background; (2) Limited evidence of statistical modeling, Python/R, or advanced analytics tools in CV; (3) Retail FMCG domain expertise not demonstrated. CV shows SQL, business intelligence, and data integration strengths but lacks the advanced statistical/ML modeling depth typically expected for senior scientist roles. Better positioned for mid-level analyst or junior scientist role."
+      "company": "Xsolla",
+      "title": "Integration Manager (Seoul, Korea)",
+      "link": "https://jooble.org/jdp/-7268964465448555994",
+      "source": "Jooble",
+      "match_score": 60,
+      "visa_likelihood": 0.0,
+      "role_category": "analyst",
+      "reasoning": "The Integration Manager role is a technical analyst position focusing on API integration, diagnostics, and troubleshooting. While Javier has relevant experience with APIs, microservices, REST, and data analysis from his fintech and ERP roles, the job description is severely truncated and lacks critical details (full responsibilities, required skills, education level, language requirements, visa sponsorship info). The candidate's background in .NET, SQL, and systems integration is tangentially relevant but not a strong match for an API-focused integration manager role. The candidate specifically targets data/AI roles and is pursuing data analyst certifications, whereas this role appears to be infrastructure/integration-focused. No explicit mention of visa sponsorship or language requirements in the provided snippet. The incomplete job description significantly limits assessment accuracy."
     }
   ],
   "today_all": [
     {
-      "company": "Lunit",
-      "title": "(Seoul) Applied Research Scientist · AI Innovation - 전문연 가능",
-      "link": "https://jobviewtrack.com/v2/K0HbcqokPnBTy1C9UBckS9NBit3t9ZmA6F8CijTd9rcS-TdIhSYrNVgyKv2h7zzdPVjd19YJeZC6i5tdhD4mwrTVnzSSZ-vnczCPtujDb3kQm8wvzS8nz-47mnuZmy7xZlSIUejmaxOnSq54Z424nTf7ajZnADPjxo6LiWGMr_iHz17ywORTk4QXigkwD9mfM1rRJQsOgeNBJjrK91RYgw",
-      "source": "Careerjet",
-      "match_score": 55,
-      "visa_likelihood": 0.75,
-      "role_category": "scientist",
-      "reasoning": "Strong alignment with candidate's stated goal of transitioning into data/AI roles in South Korea. Role emphasizes data and knowledge work within AI context, matching candidate's SQL/data integration background and ongoing Google Data Analytics certification. Lunit is a Seoul-based AI company known for international hiring and visa sponsorship for specialized roles. Candidate's Computer Engineering degree, English proficiency (C1), and conversational Korean (with TOPIK in progress) support candidacy. However, 'Applied Research Scientist' typically requires research publication experience or advanced degree (Master's/PhD) which candidate lacks—current role is junior-level engineering. The Data & Knowledge team focus and large-scale clinical data emphasis align with candidate's ERP-WMS data integration expertise. Candidate's fintech/AWS background and incident management experience demonstrate technical maturity. Main gap: research background and depth in ML/AI theory rather than applied engineering. Immediate Korean language proficiency may be secondary given English-first tech environments in Seoul startups."
+      "company": "Neowiz",
+      "title": "AI Service Engineer (전문연구요원)",
+      "link": "https://jooble.org/jdp/-3561640927211357695",
+      "source": "Jooble",
+      "match_score": 65,
+      "visa_likelihood": 0.8,
+      "role_category": "ai_engineer",
+      "reasoning": "Strong alignment with candidate's AI/data aspirations and Korea target. Neowiz is a major Korean gaming company actively hiring international talent; the '전문연구요원' (Specialized Research Personnel) visa category strongly suggests visa sponsorship for qualified foreigners. Candidate has CS degree, English C1, and conversational Korean (preparing TOPIK). However, significant gaps exist: candidate lacks explicit AI/ML project experience (has data integration and fintech SSO background, not ML/AI implementation), no demonstrated experience with game development or live service systems, and limited evidence of applied AI engineering beyond coursework. The role emphasizes translating academic AI into production gaming systems—a specialized domain requiring hands-on ML implementation experience the CV doesn't showcase. Candidate is pursuing data analytics certifications, not AI/ML specialization. Job description is partially in Korean and highly technical, suggesting preference for Korean speakers or those with deep AI background. Strong cultural/location fit and visa feasibility, but technical domain gap moderates overall score."
     },
     {
-      "company": "NielsenIQ",
-      "title": "Statistical Analyst Manager – Retail Measurement & Modeling",
-      "link": "https://jobviewtrack.com/v2/gnuHwckEtooIG8wyKXUyVqLNldAK2FAC4UnlRA8YMgNsOa8Tn4wQl86wNQqvRz1SEiUu9CJuxEbZfBNPZteUYQ0NUh4m8IcRr1mcy9QAW56Ds_3R70J3NqTB-0HgsitavKtmnLSBX2Kx-kibO2jgMzmaz3521VnqN7PFnqQkU8DbzksmOieeG16qhfPBvnS7NYSKnEecnxRjnSwO83L7zA",
-      "source": "Careerjet",
-      "match_score": 50,
-      "visa_likelihood": 0.6,
-      "role_category": "scientist",
-      "reasoning": "Strong alignment with candidate's transition goal into data science and analytics roles. Role is located in Seoul, matching target geography. Candidate has relevant technical foundation (SQL, data integration, analytics exposure) and is actively pursuing Google Advanced Data Analytics certification. Computer Engineering degree satisfies education requirements. Candidate speaks English fluently and is actively learning Korean (TOPIK preparation), addressing likely language requirements for Seoul-based role. NielsenIQ is multinational company likely to sponsor visas for qualified candidates. Primary gaps: (1) Role explicitly requests 'Senior Data Scientist' with likely 5+ years experience; candidate has 2+ years and is transitioning from software engineering/analytics, not deep ML/modeling background; (2) Limited evidence of statistical modeling, Python/R, or advanced analytics tools in CV; (3) Retail FMCG domain expertise not demonstrated. CV shows SQL, business intelligence, and data integration strengths but lacks the advanced statistical/ML modeling depth typically expected for senior scientist roles. Better positioned for mid-level analyst or junior scientist role."
+      "company": "Xsolla",
+      "title": "Integration Manager (Seoul, Korea)",
+      "link": "https://jooble.org/jdp/-7268964465448555994",
+      "source": "Jooble",
+      "match_score": 60,
+      "visa_likelihood": 0.0,
+      "role_category": "analyst",
+      "reasoning": "The Integration Manager role is a technical analyst position focusing on API integration, diagnostics, and troubleshooting. While Javier has relevant experience with APIs, microservices, REST, and data analysis from his fintech and ERP roles, the job description is severely truncated and lacks critical details (full responsibilities, required skills, education level, language requirements, visa sponsorship info). The candidate's background in .NET, SQL, and systems integration is tangentially relevant but not a strong match for an API-focused integration manager role. The candidate specifically targets data/AI roles and is pursuing data analyst certifications, whereas this role appears to be infrastructure/integration-focused. No explicit mention of visa sponsorship or language requirements in the provided snippet. The incomplete job description significantly limits assessment accuracy."
     },
     {
-      "company": "슈나이더 일렉트릭",
-      "title": "Sales Operation Analyst(Digital Energy & Power System)",
-      "link": "https://jobviewtrack.com/v2/omBl_WkB9emAXLxnenj6CWv63vvSIq3PmV-YRv8FFEnCBDhaBP8vb7_IL1mkDbgbQAaKGxJYR9puUq3MkPYXDjLvXPe3YjPoiclu_-xDn1EdlyYOTg6FhYkc1lOBz99WZQTtSZf2xTR3rx3-XN0v8TFCF3N7OddfMtax70seKrHH_7rILvrY61EqNRn_CXh2QKyD_Gilnvps-i3AUiQh-g",
-      "source": "Careerjet",
+      "company": "MinIO",
+      "title": "Field Architect",
+      "link": "https://jooble.org/jdp/-3987274893361174649",
+      "source": "Jooble",
       "match_score": 45,
+      "visa_likelihood": 0.0,
+      "role_category": "other",
+      "reasoning": "The job posting is extremely sparse, providing only company name, title (Field Architect), location (South Korea), and vague product descriptions about AI data foundations. Critical information is missing: specific technical requirements, responsibilities, experience level, education prerequisites, language requirements, salary, and visa sponsorship details. The candidate's background in SQL, ERP systems, and data integration shows some relevance to 'data foundation' concepts, and their pursuit of data analytics certifications aligns with the AI/analytics focus. However, 'Field Architect' typically implies pre-sales, customer-facing, or infrastructure deployment roles requiring demonstrated architectural experience beyond what the CV clearly shows. The candidate's strength is backend data systems rather than architectural consulting or field deployment. Without the full job description, match assessment is severely limited. The location (South Korea) matches the candidate's stated target and language preparation, but lack of explicit visa sponsorship mention and minimal role details make this a low-confidence match."
+    },
+    {
+      "company": "MinIO",
+      "title": "Field Architect",
+      "link": "https://jooble.org/jdp/6750417158209515640",
+      "source": "Jooble",
+      "match_score": 45,
+      "visa_likelihood": 0.0,
+      "role_category": "other",
+      "reasoning": "The job posting is severely incomplete, containing only a company name, role title (Field Architect), location, and a fragmented description mentioning data/AI/analytics/AIStor/MemKV. No detailed requirements, responsibilities, qualifications, salary, benefits, or language requirements are provided. Javier has relevant data systems experience (SQL Server, ERP-WMS integration, data cleaning, AWS) and is actively pursuing data analytics certifications, which aligns with the data/AI focus. However, 'Field Architect' typically implies infrastructure/sales engineering rather than a pure data analyst role Javier is targeting. The incomplete posting prevents assessment of: educational requirements, specific technical skill matches, visa sponsorship policy, team structure, and career trajectory fit. The Korean location and Javier's TOPIK preparation are positive signals, but lack of explicit language requirements in the posting and unknown visa sponsorship policy are concerns. Recommendation: Request the complete job description before proceeding."
+    },
+    {
+      "company": "MinIO",
+      "title": "Site Reliability Engineer",
+      "link": "https://jooble.org/jdp/-5466069670685759529",
+      "source": "Jooble",
+      "match_score": 35,
       "visa_likelihood": 0.6,
-      "role_category": "analyst",
-      "reasoning": "Role is Sales Operations Analyst with data/reporting focus, matching candidate's analyst background and SQL/data skills. However, position is operations-focused rather than data science/AI-focused, which conflicts with candidate's stated career goal. Schneider Electric is a multinational corporation likely to sponsor visas for skilled foreign talent, and presence in Seoul suggests foreigner-friendly environment. Candidate's Korean language skills (conversational, TOPIK in progress) and English fluency are assets. Missing details on full job requirements, required education level, and specific data technologies make education and salary assessment uncertain. Strong technical foundation but potential role mismatch with candidate's AI/data analyst career trajectory."
+      "role_category": "other",
+      "reasoning": "Site Reliability Engineer (SRE) is an infrastructure/operations role, not a data analyst, data scientist, or AI engineer role as the candidate targets. While MinIO operates in the AI/data space and the role involves data infrastructure, SRE typically focuses on system reliability, incident response, and operational excellence rather than data analysis or AI development. The candidate's background is strong in data integration and backend development, but lacks explicit SRE/DevOps/infrastructure experience (no Kubernetes, Docker, infrastructure-as-code mentioned). Candidate is fluent in English and has Korean language skills (conversational + TOPIK prep), making communication feasible. South Korea location aligns with candidate's goal. However, the role misalignment with stated career objectives (data/AI roles) and lack of demonstrated SRE/infrastructure expertise significantly reduce match quality. Visa sponsorship for foreign talent in South Korea is moderately likely for a foreign company hiring locally."
     },
     {
-      "company": "Adobe",
-      "title": "Sales Operation Analyst (Contract)",
-      "link": "https://jobviewtrack.com/v2/55KlwIDil3DOpxlRFFUur4EPSDl2jUZSRle2ZC8HJqOGDU8fVVd1HeeU_zqxatKFofooa20DYIgWQPboWTBpnBdVQODDADXZpDdRdskcNLTM7fyiPiR4P5GP9b7Btmd1hLCpbFddXp7VLjCN8tcZuXBTua3NgY2JW_D7GIs8BAdL2SgYUSFfn5UWv1C4ZAKDSjSNJ8J2maQxZekbjRzy7w",
-      "source": "Careerjet",
-      "match_score": 40,
-      "visa_likelihood": 0.4,
-      "role_category": "analyst",
-      "reasoning": "The role is a Sales Operations Analyst at Adobe in Seoul, which aligns with the candidate's data/analytics career transition goals. However, there are significant mismatches: (1) The candidate is pursuing data analyst and AI roles with SQL, Python, and analytics focus; this is a sales operations role focused on pipeline analysis and Outlook, which is business/revenue operations rather than technical data science. (2) Limited technical depth in the job description suggests it may not leverage the candidate's strong SQL Server, ETL, and database expertise. (3) The job posting lacks explicit education requirements and language specifications, making it impossible to confirm fit. (4) Adobe is a major multinational with Seoul operations and likely visa sponsorship capability, and the candidate's Korean language skills (conversational + TOPIK prep) and prior experience at Sejong University are positive signals for Korea-based roles. (5) The contract nature and location in Seoul address the candidate's Korea target, but the role direction diverges from stated data/AI career goals. The candidate would likely be overqualified for a sales ops role but underutilizing their technical background."
-    },
-    {
-      "company": "Macquarie Group",
-      "title": "Analyst - Real Assets",
-      "link": "https://jobviewtrack.com/v2/TJIAHNZ0LQFU9SQL9coJnbi9K4s9TQqiiDWogftAdhdQZ4ID0kz3mFnWX8qDGWKnyubgE_htA6Pl9rx3F5mKdONnpsaGoHRnbEu0jPOw-Fhghz18S7xyudD8nS3irg5LfZppBDjhCZGOOtEflekM3sCtnoEswdugGnX2RcYYDSlLjfx0LtpUA_ADIxkWiaqQSb01GpSgTv0dnfre86kdAg",
-      "source": "Careerjet",
-      "match_score": 25,
-      "visa_likelihood": 0.65,
-      "role_category": "analyst",
-      "reasoning": "Javier is seeking data/AI roles but this is a finance/real assets analyst position at a major multinational, which is outside his target career path. While Macquarie Group is foreign-friendly and operates in Seoul (candidate's target location), the role lacks technical depth in data science or AI. The job description provided is incomplete and doesn't specify required qualifications, languages, or technical skills, making detailed assessment difficult. Javier's SQL, data integration, and analytics coursework provide some foundation, but his experience is primarily in ERP systems rather than financial/infrastructure asset analysis. Macquarie's scale and international presence suggest visa sponsorship likelihood is moderate-to-good. The incomplete job posting prevents higher confidence matching."
-    },
-    {
-      "company": "Intuitive Surgical",
-      "title": "Senior Financial Analyst",
-      "link": "https://jobviewtrack.com/v2/SiL8WJMotrdQhi7ypmHdKFFXlhMxgeY4tXa_JARpC0vOt9KLlp-XouG6MAdzMZqAsflfb1dRLPgncqfep8nBlKG5-3qSTV4s4I3lK1q8yBW80aSD8j6C3H4IbAvm-VxVBRaSTYh5V8AikCoX-oGu-AeCI1-2UtPjGsYpuo6IXz9WvMxpzZGc3Rb87li472QN_5kFZRm45CXqrR7i6TEzfw",
-      "source": "Careerjet",
-      "match_score": 25,
-      "visa_likelihood": 0.4,
-      "role_category": "analyst",
-      "reasoning": "The role is a Senior Financial Analyst at Intuitive Surgical in Seoul, which is a strategic business/finance role rather than a data analyst, AI engineer, or software engineering position. While the job description mentions 'data' and 'analytical capabilities,' the focus is on financial analysis and business partnership—not the data science, analytics, or AI roles the candidate is actively pursuing. The candidate has SQL, data cleaning, and reporting experience (Crystal Reports, Tableau in progress), but lacks finance-specific credentials (accounting, finance degree, financial modeling). Intuitive Surgical is a multinational company likely amenable to visa sponsorship and hiring foreigners in Seoul, which is positive. However, the role significantly misaligns with the candidate's stated career transition goal into data analytics/AI in South Korea. The incomplete job description prevents assessment of education and language requirements. Match score reflects moderate company/location fit but poor role alignment."
-    },
-    {
-      "company": "MetLife",
-      "title": "Actuarial Analyst",
-      "link": "https://jobviewtrack.com/v2/-betyxiI4Bh9bb3PA_FgNwaSmVqg4lbzk8KOOGor6EbB8LRJO4IARl8K2CMBcQ6n0-TQSxIbeJmuTu1AnGqnhYrrZj-keAthx0_CLZl2D1ue-OggM8lKAL2NeAFayFyWlY_dH1eh-pPVcA2Bzw1AC9zm9BVBdG_6530OK0amNsJT_v_rEFd6XYM5m9leUnK8qE9sx5h2MxsMjgj-uRdyWw",
-      "source": "Careerjet",
-      "match_score": 25,
+      "company": "MinIO",
+      "title": "Site Reliability Engineer",
+      "link": "https://jooble.org/jdp/3162234563895587929",
+      "source": "Jooble",
+      "match_score": 20,
       "visa_likelihood": 0.0,
-      "role_category": "analyst",
-      "reasoning": "The job posting is incomplete and lacks critical details (full description, requirements, tech stack, qualifications). Actuarial Analyst roles typically require actuarial science, mathematics, or statistics background—not software engineering. Candidate's SQL/data skills may transfer, but lacks actuarial certification (ASA/FSA) which is standard. No relocation assistance despite candidate needing visa sponsorship is a significant barrier. Without full job details, match cannot be properly assessed, but the role appears misaligned with candidate's data/AI transition goals and technical background."
+      "role_category": "other",
+      "reasoning": "The job posting for Site Reliability Engineer at MinIO is extremely sparse with minimal details provided. The candidate's background is primarily in ERP systems, SQL, .NET, and data integration rather than SRE/DevOps/infrastructure roles. While MinIO operates in the AI/data space (aligned with candidate's stated interest), the SRE position typically requires systems engineering, infrastructure, and operational expertise that are not prominent in the candidate's CV. The candidate's experience is backend/data-focused rather than reliability engineering/DevOps-focused. No information is available about visa sponsorship, language requirements, salary, or specific technical requirements. The location (South Korea) matches the candidate's target, but without a complete job description, match assessment is severely limited. The role does not appear to be a data analyst, data scientist, or AI engineer position as the candidate is seeking."
     },
     {
-      "company": "Lunit",
-      "title": "(Seoul) Senior Applied Research Scientist · Cancer Screening - 전문연 가능",
-      "link": "https://jobviewtrack.com/v2/2GA5vTN19x-nh0Yx0H3HAnVsodpqUVf-DBli-Y6L9x3TyDPsdgI42BxcPEf3gSyrmMnTx-wgZBY456Utigd7d9Wl2q7JVEL_NWHlLjGckCW3uZkHYR0Pk7xLQSTzQBZoNKW3pigqQ820UCzwB3X2RmI1EGcKLG80u3dUpcjMnIR2dY0lMovWGYMb0V6YB39i06Qq3P4SNB8LRMa3r_lxtg",
-      "source": "Careerjet",
+      "company": "Xsolla",
+      "title": "Marketing Communications Manager, APAC",
+      "link": "https://jooble.org/jdp/6938001190257438825",
+      "source": "Jooble",
       "match_score": 10,
       "visa_likelihood": 0.0,
       "role_category": "other",
-      "reasoning": "Parse error"
-    },
-    {
-      "company": "Lunit",
-      "title": "(Seoul) Senior Applied Research Scientist · AI Innovation - 전문연 가능",
-      "link": "https://jobviewtrack.com/v2/sLSnY5MPAAAf4pITFQvMUytSW2y620qMU7DWUx1H4o1Oq1TXjCtORxRdgpRuLoobxpE0iQrNCB6gCKVFLpM-6bl7Hf5sjEpb8ZN341dE9Qea6rS_JzWaFRcRpKLKz5B7H-I0g7LxFU04acYbkF6dmSyZ64saVlmoZJGKzwoJXHndB0P--aR6HA61bSuvF0HLovhCwUJcovTfepcCB3ESAA",
-      "source": "Careerjet",
-      "match_score": 10,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "Parse error"
-    },
-    {
-      "company": "MetLife",
-      "title": "Underwriting Product Owner",
-      "link": "https://jobviewtrack.com/v2/GR3RN5W8KJcRxPYnQj5W3d-l34VCB7daj6NlGN3PT_Xh3rvPhHzd5rSFxc4zpDp2nOvJCYqXDshy8CYEF8pF_DRbYt8WlDvZtuoOJhngAtYxY7ihwYy2o9NlsA4eZU4v4UcpL7oicIowv1L2VOayB2z9k_858XxsLAiODP7fMWocx4ImfuqTvJW5mOWkD4t-tptmUFnndDg3PmakR75Q-g",
-      "source": "Careerjet",
-      "match_score": 10,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "The job posting is incomplete and lacks critical details (description, requirements, tech stack, language requirements). Based on available information: (1) Role is 'Underwriting Product Owner' - a business/product management role, not aligned with candidate's Data/AI career goal; (2) No relocation assistance available, which is critical for a Spanish candidate requiring visa sponsorship; (3) In-office only position in Seoul requires relocation without support; (4) No job description or requirements provided to assess technical fit, education compatibility, or language needs; (5) Candidate's strong SQL, .NET, and data integration background may have limited relevance to underwriting product ownership; (6) Missing key signals of foreigner-friendliness (no language requirements listed, no sponsorship support). The incomplete posting severely limits assessment accuracy."
-    },
-    {
-      "company": "MetLife",
-      "title": "Investment Accounting Professional",
-      "link": "https://jobviewtrack.com/v2/0bjq9KwzDlUgmDXWZg0ayOpsZgS9zxr3ZhWrIkLeE1ULHWr-tj5yuK9Yw3PlUBBqglaM2LUkN021DCqCmHOYepaM_SgV_DfekfbklSbPvO63k44w3FFy9VSJw4xRj20bmxgdbQn2KCHq2fqA176JlwJgsswctV8bhwC4ODptWccXzaYdoALbfRGQE9f8nKyERps6RrGRS_EbqQbmwtnaXA",
-      "source": "Careerjet",
-      "match_score": 10,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "Job offer description is incomplete and truncated, providing insufficient information for proper evaluation. The title 'Investment Accounting Professional' suggests a finance/accounting role rather than data/AI analytics which is the candidate's target. The role appears to be in accounting/finance domain, not aligned with candidate's software engineering and data analytics background. No relocation assistance is offered, which is critical given the candidate's location in Spain and visa sponsorship needs. The candidate's primary interest is data analyst roles in Korean tech industry, and this accounting position does not match that career trajectory. Without complete job description details, languages required, education specifications, and salary information, accurate matching is impossible."
-    },
-    {
-      "company": "JPMorgan Chase",
-      "title": "2027 Commercial & Investment Bank - Markets Summer Analyst Program - Research - Seoul",
-      "link": "https://jobviewtrack.com/v2/ueWtuoENQ2b_c6dx8tsaWG5MkNhczwKk_GnpM22pIEXwoJsRN8eR5cFMOn-p1k1qsWdng1RWzE-fFcZS-s_URlB-HQ7hsfUp-rRYsNmF2NcTb4ru1qVA-fNVm1u-wKf18-lr4e-VYikmpHvFoCqiuini9YrX7nmcRL7aheYfzYRjB9buLxZYYWjPHXhltbYug-txWo9-3Ws2JH1LUeQnNw",
-      "source": "Careerjet",
-      "match_score": 10,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "Parse error"
-    },
-    {
-      "company": "MSD",
-      "title": "Market Access Specialist",
-      "link": "https://jobviewtrack.com/v2/kbvjUpwdrQqMsByFWJ9MCtUP3x9kWeh7aDmQuyMWJmhDd7RP5_ardwFs_uhKRl4QX_XBOAYjMIqRosawzY7iqlZABb6PTw79Oy6h_F1bKLGItk-JAu5slXbwpgrKZF-vXDK7k-eoXIAFwoidrXFr9Gu7rFOl3ptHgS3e1Eey3LL02LMGEv-B9V6nqhPNaqxmZOo7GzANZms2tlPvnYVVKA",
-      "source": "Careerjet",
-      "match_score": 10,
-      "visa_likelihood": 1.0,
-      "role_category": "other",
-      "reasoning": "This is a Market Access Specialist role in pharmaceuticals/healthcare (MSD), not a data/AI analyst position. The candidate explicitly wants data/AI roles and is pursuing Data Analytics certifications. The job description is incomplete and lacks technical details, but appears to focus on healthcare market access and product value demonstration—misaligned with the candidate's software engineering and data analytics career trajectory. Positive factors: visa sponsorship is offered, location is Seoul (candidate's target), and the role is in Korea. Negative factors: role category is healthcare business/market access (not technical), no clear data/AI component, and no overlap with candidate's technical skill set (SQL, .NET, Python, etc.). The candidate would likely be overqualified technically but underqualified in healthcare/pharmaceutical domain expertise."
-    },
-    {
-      "company": "MetLife",
-      "title": "Product Designer",
-      "link": "https://jobviewtrack.com/v2/g3pJOzNpkWgWfYFNh98y07cmQr7kGAkO_UYQHi3uPLd2n1ZTiCTbCxbWclvmPz3NexcBoHW5AqLAPWRHvtfDQPt5mcEolRVg0D-Nk7ldvUfHddw6G4l33P9_IoUDo2cI2DNVffLj0YNS__Tttk8sVOBftWjk5ccCfAC5itl8XBK8tFS35tk5khUdHYqP5x1ngKBzZMfcL7GbIEbh8_tOAg",
-      "source": "Careerjet",
-      "match_score": 10,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "The job posting is incomplete and lacks critical details (description, requirements, responsibilities, qualifications, technologies, languages). Javier is seeking data/AI analyst roles, but this position is titled 'Product Designer' which typically involves UX/UI design rather than data analytics or software engineering. No relocation assistance is offered, which is a significant barrier given Javier's need for visa sponsorship to work in South Korea. The in-office requirement in Seoul and lack of relocation support further reduce compatibility. Without full job details, education match and language requirements cannot be properly assessed. The role category mismatch (design vs. data/engineering) is a primary concern."
-    },
-    {
-      "company": "존슨앤드존슨",
-      "title": "MedTech] Clinical Sales - Electrophysiology",
-      "link": "https://jobviewtrack.com/v2/nNPsel3aoBkpAFkMQ4wvhZ1N-RwfDt1IpM4HV0yiO74FnOmNYg-wVwlXzpwksZ9JpQzLWEgQLLxjPw9DRygLpP_Ea9iKJkZn9U5BQ7g2nOoFhYtWrPFwwDke-PqZiROhOvOuNhTCnkb0BlooFwtNLNoPshAzfWmOc6UHmUXTX9dzDbj1FXotx-rpf6VZWKbVqbPtx0bKf0MMjcBYW4__AQ",
-      "source": "Careerjet",
-      "match_score": 5,
-      "visa_likelihood": 0.3,
-      "role_category": "other",
-      "reasoning": "This is a Clinical Sales role in MedTech/Electrophysiology, not a data analyst, AI engineer, or scientist position. The job explicitly seeks a 'Scientist or related healthcare professional,' which does not align with Javier's Computer Engineering background. While the role mentions 'Data Reporting,' it is a minor competency within a sales-focused position. Javier's technical skills (SQL, .NET, analytics certifications in progress) are largely irrelevant to clinical sales. The candidate's Korean language proficiency (conversational) and year in South Korea provide some cultural familiarity, and Johnson & Johnson typically sponsors visas, but the fundamental role mismatch makes this an extremely poor fit for his stated career goals in Data/AI roles."
-    },
-    {
-      "company": "MetLife",
-      "title": "Valuation Actuary(1-Year Contract)",
-      "link": "https://jobviewtrack.com/v2/jtuZ2qBUvgfA2ekIaHToVCDXouoljrMZ4PII7gtSiv1wgUQE-Skfairu27DLsqhBMkRGXhZ9pTv2cCdR4nq1KDch2_x9MnDJ5XjaO-1nYzpi8NKvVvaM1-ONLjKYGiobFA2WzYZopZVEY1YU4jhZykn7-6FnZra7FYkGF_z_5eJENAjaTyxzhSs2Yfyu_AMBxOU-XWpMWtU2-4MydWJghA",
-      "source": "Careerjet",
-      "match_score": 0,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "This is a Valuation Actuary role requiring actuarial expertise and certification (ASA/FSA), which is fundamentally incompatible with the candidate's Computer Engineering background and career trajectory. The candidate has no actuarial training, no insurance/pension experience, and no mention of actuarial credentials. The role appears to require a mathematics, actuarial science, or finance degree. The job posting lacks relocation assistance despite being in Seoul, Korea—critical for a foreign candidate. No technology stack is mentioned, making it impossible to assess technical alignment. The candidate's stated goal is data/AI roles in Korean tech, not actuarial work. While the candidate speaks English and Korean (conversational), and Seoul matches the geographic target, the core professional mismatch makes this unsuitable."
-    },
-    {
-      "company": "MetLife",
-      "title": "Accounting Professional(15-Month Contract)",
-      "link": "https://jobviewtrack.com/v2/vRMGRLb6bXdlfdqoLY62g3RYpCeoo39jcNf-fxmgWsPoLJHF6V_FZ01Gk3TcA92_Qybsz97-Ax2tuqsDkm3NnwHl6vtvH6aP35iPaQd6k3UXKD_rgxYkGlg2HVjcxG7AxR0fTuVoVDPLNSg0GApSUwdW999GlTfuXlVbQiS2_ULhu_wJEG_5t7dlU5OBQSlTNb8pnT3XnjwsC2WTBZmH_w",
-      "source": "Careerjet",
-      "match_score": 0,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "This is an Accounting Professional role at MetLife in Seoul, which is fundamentally misaligned with the candidate's profile. The candidate has a Computer Engineering degree and is actively seeking Data/AI roles in South Korea with technical depth. This role requires accounting/finance expertise, not software engineering or data science skills. The job description is incomplete (truncated at 'Work Arrangement...'), making full evaluation impossible, but the core mismatch is clear: accounting vs. computer engineering background. No relocation assistance is offered, which is a disadvantage given the candidate may need visa sponsorship. A 15-month temporary contract does not align with career stability expectations for someone relocating internationally. The candidate's SQL, .NET, React, and Java skills are irrelevant to accounting work. Strong recommendation to skip this opportunity and focus on technical roles in data/analytics/AI that leverage the candidate's engineering background and Korean language acquisition."
-    },
-    {
-      "company": "Crocs",
-      "title": "Retail Location Manager",
-      "link": "https://jobviewtrack.com/v2/kYXBceE8QPX-rbmIGPFtdviPOKjCDusaiFgp_hHOSJH421sHqa7Jm980khbNcJCuWAnkZ4USKs2fiLU015Jeo-1WQZmXQltgrPa6bOp9K_mLUIO33R1aHXykdsbaKPJRw5oG9bxw4_m9hPsejqFMDHKI30Seo2dAhYll1NbbEwRqZKAbiaJdnbDNYpuwTN1c2iAdQHXflLF0ySl-gBRmEw",
-      "source": "Careerjet",
-      "match_score": 0,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "This is a Retail Location Manager role focused on operations, strategy delivery, and business growth in physical retail settings. The candidate is a Software Engineer with a Computer Engineering degree seeking Data/AI roles in tech. The role requires retail management expertise, not software development or data analytics capabilities. No explicit language requirements were provided in the job description. The candidate's technical background, data aspirations, and engineering education are fundamentally misaligned with a retail operations management position. No visa sponsorship information was mentioned. While the candidate can speak Korean conversationally and the role is Korea-based, this is a poor fit overall."
-    },
-    {
-      "company": "Boston Scientific",
-      "title": "Regional Medical Affairs Lead. Interventional Oncology, APAC",
-      "link": "https://jobviewtrack.com/v2/lrlzueAMMaFPPaK6i4kzg_jimNNlM22xDr20M8LGan4fgUqasgqI2WC9nY2QfsrniaL87XbeIeeqSDFjPQFVD6XEe3ivr75wN26iYJa_7MduEksFyUXvL-fnxWYi9W8syF4cupyYTv5Muhyw4HLp57sj0CK1OO2xDFMw_LOL9zzxBD7_-irENowDtQXLwQ_757a4iYl8KzUKDdQgIlmvUg",
-      "source": "Careerjet",
-      "match_score": 0,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "Poor fit. This is a Medical Affairs leadership role in pharmaceutical/medical device industry (Boston Scientific), requiring medical/life sciences background and commercial/regulatory expertise. Candidate has Computer Engineering degree and software/data engineering experience with zero medical affairs, regulatory affairs, or life sciences domain knowledge. Role explicitly states 'no relocation support' and requires applicants to already be based in or have valid work authorization in Seoul—candidate would need visa sponsorship, which is a dealbreaker for this posting. Role category is business/medical affairs, not data/AI as candidate seeks. No relevant technologies or transferable skills match this position."
-    },
-    {
-      "company": "Boston Scientific",
-      "title": "Regional Medical Affairs Lead. Interventional Oncology, APAC",
-      "link": "https://jobviewtrack.com/v2/-KZZnMQcY_fb5ZXjsDZUKIt1f3isY0LeWA1BAMM8mmonyCMOWMtIrr_-jHUt_RBg9opC0w1v9oS-v3vcKKKaYz52uthUrLtp6e5-fgyj5TnFsjDlWxIa_28Gysu4Rh9D9ANM-t5sW2vZwnpoCpS4OBKw6nei0kXLNjfifhEZ3viGVq6Y5VbYeKV1eDQcQHalSVKZHONHShoPovQYeHOsnQ",
-      "source": "Careerjet",
-      "match_score": 0,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "This role is a Medical Affairs Lead in Interventional Oncology—a clinical/medical business development position, not a data analyst, AI engineer, or technical role. The candidate's background is purely technical (Software Engineer, SQL, .NET, Java, React). The job explicitly states it does not offer relocation support and requires applicants to already be based in or have valid work authorization for Seoul, Korea. The candidate is in Spain without existing Korean work authorization, making visa sponsorship unlikely. No technical skills from the candidate's CV align with medical affairs responsibilities. Education mismatch: the role requires medical/clinical/business background, not Computer Engineering. The only positive signal is the candidate's Korean language preparation and prior year in South Korea, but this is insufficient to offset the fundamental role/background mismatch and lack of relocation support."
+      "reasoning": "This is a Marketing Communications Manager role focused on PR, media relations, and content management—fundamentally misaligned with Javier's technical background in software engineering, data integration, and development. While the job description mentions monitoring 'content performance data,' this is a peripheral responsibility within a marketing communications function, not a data analyst or data-focused role. Javier explicitly targets Data/AI roles and holds a Computer Engineering degree; this position requires marketing/communications expertise, not technical skills. The role is in South Korea (candidate's target location) which is positive, but there is no visa sponsorship mention and no indication this company actively recruits international talent for non-technical roles. The education mismatch (engineering vs. marketing/business) and career direction misalignment result in a low match score."
     }
   ]
 }

@@ -234,9 +234,11 @@ pip install -r requirements.txt
 
 ```env
 JOOBLE_API_KEY=your_key
+CAREERJET_API_KEY=your_key
 ANTHROPIC_API_KEY=your_key
 TELEGRAM_TOKEN=your_bot_token
 TELEGRAM_CHAT_ID=your_chat_id
+PUBLIC_IP=your_public_ip
 ```
 
 ### 3. Add your CV

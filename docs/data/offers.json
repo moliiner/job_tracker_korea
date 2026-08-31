@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-08-30T14:34:58.473957",
+  "generated_at": "2026-08-31T17:18:46.724842",
   "threshold": 50,
   "top_offers": [],
   "today_all": [
     {
       "company": "MinIO",
       "title": "Field Architect",
-      "link": "https://jooble.org/jdp/-3987274893361174649",
+      "link": "https://jooble.org/jdp/6750417158209515640",
       "source": "Jooble",
       "match_score": 45,
-      "visa_likelihood": 0.0,
+      "visa_likelihood": 0.6,
       "role_category": "other",
-      "reasoning": "The Field Architect role at MinIO is positioned as a data/AI infrastructure role, which aligns with the candidate's career transition toward data-oriented positions. However, the job description provided is incomplete and lacks critical details including full responsibilities, required qualifications, experience level, location specifics, visa sponsorship policy, salary information, and language requirements. The candidate has relevant experience with data integration, SQL systems, and cloud infrastructure (AWS), but a Field Architect typically requires deeper solutions architecture expertise and customer-facing skills not clearly demonstrated in the CV. The candidate's immersion in Korean culture and TOPIK preparation are assets, but without explicit language requirements or sponsorship confirmation from the incomplete job posting, match assessment is severely limited. Strong alignment on data/AI interest, but insufficient information to recommend a confident application."
-    },
-    {
-      "company": "MinIO",
-      "title": "Site Reliability Engineer",
-      "link": "https://jooble.org/jdp/3162234563895587929",
-      "source": "Jooble",
-      "match_score": 40,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "Site Reliability Engineer (SRE) role is a systems/infrastructure position, not a data analyst, data scientist, or AI engineer role. Candidate's primary goal is transitioning into data/AI roles, and this SRE position conflicts with that trajectory. While MinIO operates in the AI data infrastructure space and candidate has some relevant experience (AWS, SQL Server, systems design, incident management), the role focuses on reliability engineering, operations, and infrastructure—not data analysis or AI development. No visa sponsorship details provided in job posting. No language requirements specified. Education match is unknown as job posting excerpt is incomplete. The candidate's background in ERP systems, database work, and infrastructure could provide tangential relevance to SRE responsibilities, but this represents a sideways move away from the stated career goal of entering data/AI roles in Korea."
+      "reasoning": "Field Architect at MinIO is not a pure data analyst/scientist role but aligns with candidate's transition goals into data/AI space. Candidate has strong foundational data skills (SQL, data integration, ERP systems) and technical depth (.NET, Java, cloud infrastructure with AWS). However, the role appears to be solution architecture/pre-sales rather than hands-on analytics or AI development. Candidate lacks explicit ML/AI engineering experience but has data infrastructure and cloud background. MinIO's South Korea presence suggests visa sponsorship possibility. Incomplete job description limits precise match assessment. Candidate's English proficiency and Korean conversational ability are assets. Strong technical foundation but role may be sideways move rather than ideal progression toward data analyst/AI engineer positions candidate seeks."
     },
     {
       "company": "MinIO",
       "title": "Field Architect",
-      "link": "https://jooble.org/jdp/6750417158209515640",
+      "link": "https://jooble.org/jdp/-3987274893361174649",
       "source": "Jooble",
-      "match_score": 20,
-      "visa_likelihood": 0.0,
+      "match_score": 40,
+      "visa_likelihood": 0.6,
       "role_category": "other",
-      "reasoning": "The job offer description is incomplete and provides insufficient information for proper evaluation. Only the company name (MinIO), job title (Field Architect), location (South Korea), and a brief tagline about data/AI are provided. No explicit technology stack, responsibilities, requirements, education level, language requirements, visa sponsorship policy, or salary information are specified. While MinIO's focus on data infrastructure aligns with the candidate's data integration background and AI career transition goals, and the South Korea location matches the candidate's target region, the lack of concrete job details prevents accurate matching. The 'Field Architect' title suggests a hybrid technical/sales role rather than a pure analyst/scientist/engineer position. Without full job description details, this appears to be an incomplete listing."
+      "reasoning": "Field Architect role at MinIO focuses on enterprise AI and data infrastructure. Strong alignment: candidate has hands-on SQL Server, data integration, ERP systems, and AWS cloud experience; pursuing Google Data Analytics certification; targeting South Korea and willing to relocate. Weaknesses: role appears architect/sales-engineering focused rather than pure analyst/data role candidate seeks; no explicit job description details provided to assess technical depth match; Korean language skills still conversational (TOPIK in preparation). Visa sponsorship likely given MinIO's global scale and candidate's tech background, but not guaranteed. Education match unknown due to incomplete job description. Missing explicit language requirements but MinIO typically hires internationally in English-speaking roles."
+    },
+    {
+      "company": "MinIO",
+      "title": "Site Reliability Engineer",
+      "link": "https://jooble.org/jdp/-5466069670685759529",
+      "source": "Jooble",
+      "match_score": 35,
+      "visa_likelihood": 0.6,
+      "role_category": "other",
+      "reasoning": "The Site Reliability Engineer role at MinIO is tangentially related to the candidate's career aspirations but misaligned with stated goals. While MinIO operates in the AI/data infrastructure space (relevant to candidate's data analytics transition), SRE positions typically focus on infrastructure, DevOps, system reliability, and operational excellence—not data analysis, analytics, or AI engineering roles the candidate explicitly targets. The candidate has some relevant infrastructure exposure (AWS, SQL Server, system design) but lacks demonstrated SRE experience (monitoring, incident response at scale, infrastructure-as-code, containerization, Kubernetes). The role is based in South Korea (matching target location) and MinIO, as a global tech company, likely sponsors visas for qualified candidates (positive signal). However, no language requirements are mentioned in the partial job description provided, and the education requirement is unstated. The role represents a lateral or backward career move for someone actively upskilling in data analytics and Google Advanced Data Analytics certifications."
     },
     {
       "company": "Op Labs",
@@ -39,9 +39,9 @@
       "link": "https://jooble.org/jdp/7080990466955346813",
       "source": "Jooble",
       "match_score": 20,
-      "visa_likelihood": 0.0,
+      "visa_likelihood": 0.3,
       "role_category": "other",
-      "reasoning": "Critical mismatch: Job is Enterprise Sales Lead (sales/business development role), but candidate explicitly targets Data/AI analyst positions and has zero sales experience. Candidate's background is purely technical (software engineering, database systems, development). No job description details provided to assess education requirements, languages, or other criteria. Location is South Korea (candidate's target), but role category is fundamentally incompatible with stated career goals. Geographic match alone cannot overcome functional misalignment."
+      "reasoning": "This is an Enterprise Sales Lead role, which is fundamentally misaligned with the candidate's profile and career goals. The candidate is a Software Engineer with a Computer Engineering degree actively seeking Data/AI analyst roles, not sales positions. While the role is based in South Korea (matching the candidate's target location) and Op Labs likely offers visa sponsorship for international talent, the position requires business development and sales expertise rather than technical or data science capabilities. The candidate has no sales experience, no blockchain/fintech background relevant to Optimism's products, and no indication of interest in enterprise sales. The job description provided contains no specific language requirements, education requirements, or technical details that would create alignment. This represents a significant career pivot away from the candidate's stated trajectory and technical strengths."
     },
     {
       "company": "Valor Capital Group",
@@ -51,17 +51,17 @@
       "match_score": 20,
       "visa_likelihood": 0.0,
       "role_category": "other",
-      "reasoning": "This is an Account Executive (sales) role at ElevenLabs, not a data/AI engineering position. The candidate is a Software Engineer with strong technical skills (SQL, .NET, React, Java, AWS) and is actively pursuing data analytics certifications, but this role is fundamentally misaligned with their career trajectory and expertise. Account Executive positions typically require sales experience, business development skills, and client relationship management—none of which are evident in the candidate's CV. The job description provided is incomplete (contains only company background about ElevenLabs, no actual job requirements, responsibilities, or qualifications listed), making detailed matching impossible. The candidate's target is data/AI roles in South Korea, and while they have Korean language skills in progress and demonstrated interest in Korean tech industry, this sales role does not match those goals. No explicit visa sponsorship information, language requirements, or education requirements are stated in the incomplete job posting."
+      "reasoning": "This is an Account Executive (sales/business development) role at ElevenLabs, not a data analyst, AI engineer, or scientist position. The candidate's technical background in SQL, .NET, Java, and React.js is irrelevant to account executive responsibilities. The candidate explicitly wants data/AI roles and is pursuing data analytics certifications—this sales role misaligns with stated career goals. While the location (South Korea) matches the candidate's target and ElevenLabs is known to be foreigner-friendly, the role itself is fundamentally incompatible with the candidate's technical profile and aspirations. No job description details provided to assess education requirements, language needs, or visa sponsorship policy."
     },
     {
       "company": "MinIO",
       "title": "Site Reliability Engineer",
-      "link": "https://jooble.org/jdp/-5466069670685759529",
+      "link": "https://jooble.org/jdp/3162234563895587929",
       "source": "Jooble",
       "match_score": 20,
       "visa_likelihood": 0.0,
       "role_category": "other",
-      "reasoning": "Parse error"
+      "reasoning": "The job description provided is incomplete and lacks critical details (responsibilities, required skills, qualifications, compensation, visa sponsorship info, language requirements). Based on the title 'Site Reliability Engineer' at MinIO (data infrastructure company), this is fundamentally a DevOps/SRE role, NOT a Data Analyst or AI role that the candidate is actively pursuing. While the candidate has some relevant infrastructure exposure (AWS, SQL Server, incident management), their career trajectory and certifications focus on data analytics and AI (Google Data Analytics cert, Tableau, Analytics certifications in progress). The SRE role would represent a significant career pivot away from stated goals. The location (South Korea) aligns with candidate's target, and their Korean language skills (conversational, TOPIK in progress) show commitment, but without explicit visa sponsorship language in the job posting, sponsorship likelihood is uncertain. The incomplete job description prevents accurate assessment of education match and language requirements."
     }
   ]
 }

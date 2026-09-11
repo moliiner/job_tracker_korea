@@ -1,28 +1,8 @@
 {
-  "generated_at": "2026-09-10T13:57:22.047480",
+  "generated_at": "2026-09-11T13:56:45.390634",
   "threshold": 50,
   "top_offers": [],
   "today_all": [
-    {
-      "company": "MinIO",
-      "title": "Field Architect",
-      "link": "https://jooble.org/jdp/907892565502850444",
-      "source": "Jooble",
-      "match_score": 45,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "The Field Architect role at MinIO is infrastructure/architecture-focused rather than data analyst/scientist. Candidate has strong data integration and SQL expertise but lacks explicit AI/ML engineering experience, cloud-native architecture, or field/sales engineering background. The incomplete job description provides minimal detail on required skills, languages, or visa sponsorship policies. Candidate's data analytics certifications in progress and AWS exposure show alignment with enterprise data platforms, but the 'Field Architect' title suggests customer-facing/presales architecture expertise which isn't clearly demonstrated in CV. Location is South Korea (candidate's target) but no visa sponsorship clarity exists. Education compatibility is unknown due to incomplete job posting. Limited information makes accurate assessment difficult."
-    },
-    {
-      "company": "MinIO",
-      "title": "Site Reliability Engineer",
-      "link": "https://jooble.org/jdp/-364427356711431173",
-      "source": "Jooble",
-      "match_score": 45,
-      "visa_likelihood": 0.6,
-      "role_category": "other",
-      "reasoning": "Site Reliability Engineer is a infrastructure/operations role, not a Data/AI Analyst or Data Scientist role as the candidate targets. While MinIO operates in the AI data infrastructure space and the candidate has relevant cloud (AWS), databases (SQL Server), and systems experience, this is an SRE/DevOps position rather than a data analytics or AI engineering role. The candidate's Computer Engineering degree is compatible. MinIO is a global company with operations in South Korea, suggesting visa sponsorship likelihood and foreign-worker friendliness. However, the role misaligns with the candidate's stated career goals of transitioning into data analytics in Korean tech. The candidate's SRE-adjacent experience (AWS, infrastructure, incident triage) provides some foundation, but lacks explicit Kubernetes, containerization, or infrastructure-as-code expertise typically required for SRE roles. No specific language requirements mentioned in the partial job description provided."
-    },
     {
       "company": "MinIO",
       "title": "Field Architect",
@@ -31,17 +11,17 @@
       "match_score": 40,
       "visa_likelihood": 0.0,
       "role_category": "other",
-      "reasoning": "The Field Architect role at MinIO is positioned in the data/AI infrastructure domain, which aligns with the candidate's stated interest in data and AI roles. However, the job description provided is incomplete and lacks critical details: no explicit technical requirements, qualifications, languages, or visa sponsorship information are mentioned. The candidate has relevant experience in data integration, SQL, and some exposure to enterprise systems, but lacks demonstrated expertise in cloud-native data platforms, distributed systems, or AI infrastructure—typical requirements for a Field Architect role. The candidate's background is stronger in application development and ERP integration than in data platform architecture. No language requirements are specified in the incomplete description. The candidate's Korean language skills and South Korea target location are assets, but without explicit sponsorship information in the listing, visa support likelihood cannot be assessed positively. The incomplete job description significantly limits match confidence."
+      "reasoning": "The job offer is extremely incomplete—only a company name (MinIO), title (Field Architect), location (South Korea), and a fragmentary description focusing on data/AI infrastructure are provided. No detailed requirements, responsibilities, qualifications, salary, visa sponsorship policy, or language requirements are specified. Javier has relevant data skills (SQL, ERP systems, data integration) and strong motivation to work in South Korea, but a Field Architect role typically emphasizes customer-facing architecture and solution design rather than backend data engineering—areas where his hands-on systems experience is stronger than demonstrated architecture/consulting expertise. The description cuts off mid-sentence, making a full assessment impossible. To improve match likelihood, the complete job description, required qualifications, and visa/relocation policies are essential."
     },
     {
       "company": "MinIO",
       "title": "Site Reliability Engineer",
       "link": "https://jooble.org/jdp/-5466069670685759529",
       "source": "Jooble",
-      "match_score": 20,
-      "visa_likelihood": 0.0,
+      "match_score": 35,
+      "visa_likelihood": 0.6,
       "role_category": "other",
-      "reasoning": "The job description provided is incomplete and lacks critical details needed for proper evaluation. The title 'Site Reliability Engineer' suggests infrastructure/ops work rather than the data/AI analyst roles the candidate is pursuing. The candidate has strong backend/database skills (SQL Server, .NET, ERP systems) and is actively pursuing data analytics certifications, but SRE roles typically require DevOps, infrastructure, and system reliability expertise—areas not prominently featured in the CV. The candidate has AWS experience (Cognito, Wasabi) which could be relevant for infrastructure work, but without the full job description, technologies required, language requirements, visa sponsorship details, and specific responsibilities, a high-confidence match cannot be determined. The candidate's target is data/AI roles in South Korea; this appears to be an engineering operations role that may not align with stated career goals."
+      "reasoning": "The Site Reliability Engineer role at MinIO is a good location and visa-sponsorship-friendly match for the candidate's South Korea target and multinational company profile. However, it is a significant career pivot from the candidate's stated goal of transitioning into Data Analyst / AI roles. The role focuses on infrastructure reliability and engineering rather than data analysis, analytics, or AI development. While MinIO operates in the AI/analytics data infrastructure space, SRE positions typically emphasize systems operations, incident management, and infrastructure stability—not data science or analytics work. The candidate's core skills (SQL, data integration, ERP systems) are not directly leveraged in an SRE capacity. The candidate is currently pursuing data analytics certifications (Google Data Analytics, Tableau) and seeking analyst-track roles; this engineering-ops role would redirect them away from that stated career transition. No explicit language or education requirements are listed in the partial job description provided, making those fields unknown. The match score reflects location/visa alignment but significant role misalignment with career goals."
     }
   ]
 }

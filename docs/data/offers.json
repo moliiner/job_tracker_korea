@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T13:14:16.180286",
+  "generated_at": "2026-09-13T13:58:55.082210",
   "threshold": 50,
   "top_offers": [],
   "today_all": [
@@ -8,20 +8,20 @@
       "title": "Field Architect",
       "link": "https://jooble.org/jdp/6750417158209515640",
       "source": "Jooble",
-      "match_score": 45,
-      "visa_likelihood": 0.0,
+      "match_score": 40,
+      "visa_likelihood": 0,
       "role_category": "other",
-      "reasoning": "The job posting is severely incomplete, providing only a company name, title 'Field Architect', and a fragmented description mentioning 'data and memory foundation for enterprise AI' and 'AIStor and MemKV'. No specific technical requirements, responsibilities, qualifications, location details, visa sponsorship information, language requirements, or salary are provided. Javier has relevant data integration and SQL expertise but lacks demonstrated AI/ML engineering experience or deep cloud-native architecture background. The 'Field Architect' role typically requires significant enterprise sales/technical consulting experience, which is not evident in the CV. The incomplete posting prevents proper assessment of fit. Visa sponsorship likelihood is marked 0 because no sponsorship information is provided and South Korea-based roles rarely sponsor for junior/mid-level engineers without explicit mention. Without full job details, this match cannot be properly evaluated."
+      "reasoning": "The job posting is severely incomplete—only a company name, title, and partial product description are provided. No specific technologies, required skills, experience level, qualifications, language requirements, visa sponsorship details, or full job responsibilities are listed. While MinIO operates in the data/AI space and the candidate has relevant SQL, data integration, and cloud (AWS) experience, the match cannot be properly assessed. The candidate's data analytics certifications, Korean language skills, and South Korea location preference are favorable, but the truncated posting provides insufficient information to evaluate role fit, seniority alignment, or organizational match. The candidate is technically qualified in data foundations and cloud infrastructure, but architectural roles typically require senior expertise and proven track records that aren't clearly called for in this incomplete posting."
     },
     {
       "company": "MinIO",
       "title": "Site Reliability Engineer",
       "link": "https://jooble.org/jdp/-5466069670685759529",
       "source": "Jooble",
-      "match_score": 20,
-      "visa_likelihood": 0.0,
+      "match_score": 35,
+      "visa_likelihood": 0,
       "role_category": "other",
-      "reasoning": "Parse error"
+      "reasoning": "The Site Reliability Engineer role at MinIO is infrastructure/operations-focused, not data analyst or AI engineer as the candidate seeks. While MinIO operates in the AI data infrastructure space and the candidate has relevant SQL, cloud (AWS), and systems experience, the SRE title typically emphasizes reliability, uptime, monitoring, and operational excellence—areas not highlighted in the candidate's CV. The candidate's strengths lie in data integration, ERP systems, and backend development rather than SRE/DevOps. No visa sponsorship details provided in the offer. The job description is incomplete and provides insufficient information on education requirements, languages, or salary. The location (South Korea) aligns with the candidate's goals, but the role trajectory does not support the stated transition into data analyst/AI roles."
     }
   ]
 }

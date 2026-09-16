@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-15T14:32:52.364893",
+  "generated_at": "2026-09-16T14:27:09.183439",
   "threshold": 50,
   "top_offers": [],
   "today_all": [
     {
       "company": "OP Labs",
       "title": "Enterprise Sales Lead, Korea",
-      "link": "https://jooble.org/jdp/-457267260149956062",
+      "link": "https://jooble.org/jdp/8912163096526861962",
       "source": "Jooble",
       "match_score": 20,
-      "visa_likelihood": 0,
+      "visa_likelihood": 0.6,
       "role_category": "other",
-      "reasoning": "This is an Enterprise Sales Lead role, not a data/AI analyst position. The candidate's profile is heavily technical (SQL, .NET, ERP systems, React, Java) with career aspirations toward data analytics and AI roles in South Korea. While the role is based in South Korea (matching geographic preference), it is fundamentally misaligned with the candidate's technical background and stated career goals. No job description details were provided to assess education requirements, language preferences, visa sponsorship, or technical fit. The minimal match score reflects geographical alignment only; the role category mismatch and sales-focused nature make this a poor fit for a software engineer transitioning into data/AI."
+      "reasoning": "Poor match. The role is Enterprise Sales Lead - a business development and sales position, not a data/AI role as candidate targets. No technical requirements align with candidate's skills (SQL, .NET, data analytics). No job description details provided to assess education requirements or language needs. Candidate has Korea target and may receive visa sponsorship as OP Labs is a blockchain company likely open to hiring international talent, but role mismatch is fundamental. Candidate's data analytics certifications, SQL expertise, and Korean language learning are irrelevant to sales leadership responsibilities."
     }
   ]
 }

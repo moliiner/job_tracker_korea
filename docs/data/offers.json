@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T14:27:09.183439",
+  "generated_at": "2026-09-17T14:32:22.507429",
   "threshold": 50,
   "top_offers": [],
   "today_all": [
@@ -11,7 +11,7 @@
       "match_score": 20,
       "visa_likelihood": 0.6,
       "role_category": "other",
-      "reasoning": "Poor match. The role is Enterprise Sales Lead - a business development and sales position, not a data/AI role as candidate targets. No technical requirements align with candidate's skills (SQL, .NET, data analytics). No job description details provided to assess education requirements or language needs. Candidate has Korea target and may receive visa sponsorship as OP Labs is a blockchain company likely open to hiring international talent, but role mismatch is fundamental. Candidate's data analytics certifications, SQL expertise, and Korean language learning are irrelevant to sales leadership responsibilities."
+      "reasoning": "This is an Enterprise Sales Lead role at a blockchain company, which is fundamentally misaligned with the candidate's career goals and background. The candidate explicitly seeks Data/AI analyst roles, but this position is sales-focused with no mention of technical responsibilities, data analysis, AI, or analytics. The candidate has strong technical skills (SQL, .NET, data integration, Python foundations) but no sales or business development experience listed. While the role is in South Korea (candidate's target), and the company operates in the tech/blockchain space (candidate's sector interest), the role category is completely different. The offer description is incomplete (missing key details about requirements, languages, qualifications), making it impossible to assess education fit, language requirements, or salary compatibility. The company's international presence (working with global enterprises) and location in South Korea suggest visa sponsorship is possible, but the fundamental role mismatch severely limits this opportunity's suitability for the candidate's career transition into data analytics."
     }
   ]
 }

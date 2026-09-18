@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T14:32:22.507429",
+  "generated_at": "2026-09-18T13:57:54.414472",
   "threshold": 50,
   "top_offers": [],
   "today_all": [
@@ -9,9 +9,9 @@
       "link": "https://jooble.org/jdp/8912163096526861962",
       "source": "Jooble",
       "match_score": 20,
-      "visa_likelihood": 0.6,
+      "visa_likelihood": 0,
       "role_category": "other",
-      "reasoning": "This is an Enterprise Sales Lead role at a blockchain company, which is fundamentally misaligned with the candidate's career goals and background. The candidate explicitly seeks Data/AI analyst roles, but this position is sales-focused with no mention of technical responsibilities, data analysis, AI, or analytics. The candidate has strong technical skills (SQL, .NET, data integration, Python foundations) but no sales or business development experience listed. While the role is in South Korea (candidate's target), and the company operates in the tech/blockchain space (candidate's sector interest), the role category is completely different. The offer description is incomplete (missing key details about requirements, languages, qualifications), making it impossible to assess education fit, language requirements, or salary compatibility. The company's international presence (working with global enterprises) and location in South Korea suggest visa sponsorship is possible, but the fundamental role mismatch severely limits this opportunity's suitability for the candidate's career transition into data analytics."
+      "reasoning": "Critical mismatch: Javier is pursuing a data analyst / AI role transition, but this is an Enterprise Sales Lead position focused on business development and sales in the blockchain/crypto space. The role description provided is incomplete and contains no technical details, job requirements, or language specifications. No information about education requirements, visa sponsorship, or required qualifications is available. The candidate's technical background (SQL, .NET, data integration) is irrelevant to a sales leadership role. The only alignment is geographic location preference (South Korea) and potential visa sponsorship need, but without complete job details, a meaningful assessment cannot be made. This role appears fundamentally misaligned with the candidate's career goals and technical skill set."
     }
   ]
 }

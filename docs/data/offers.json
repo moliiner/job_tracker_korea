@@ -1,17 +1,6 @@
 {
-  "generated_at": "2026-09-18T13:57:54.414472",
+  "generated_at": "2026-09-19T13:33:58.005387",
   "threshold": 50,
   "top_offers": [],
-  "today_all": [
-    {
-      "company": "OP Labs",
-      "title": "Enterprise Sales Lead, Korea",
-      "link": "https://jooble.org/jdp/8912163096526861962",
-      "source": "Jooble",
-      "match_score": 20,
-      "visa_likelihood": 0,
-      "role_category": "other",
-      "reasoning": "Critical mismatch: Javier is pursuing a data analyst / AI role transition, but this is an Enterprise Sales Lead position focused on business development and sales in the blockchain/crypto space. The role description provided is incomplete and contains no technical details, job requirements, or language specifications. No information about education requirements, visa sponsorship, or required qualifications is available. The candidate's technical background (SQL, .NET, data integration) is irrelevant to a sales leadership role. The only alignment is geographic location preference (South Korea) and potential visa sponsorship need, but without complete job details, a meaningful assessment cannot be made. This role appears fundamentally misaligned with the candidate's career goals and technical skill set."
-    }
-  ]
+  "today_all": []
 }

@@ -1,16 +1,36 @@
 {
-  "generated_at": "2026-10-04T15:05:28.277041",
+  "generated_at": "2026-10-05T19:00:52.272270",
   "threshold": 50,
   "top_offers": [
     {
       "company": "42dot",
-      "title": "Senior AI Engineer (Driving VLM/VLA)",
-      "link": "https://jooble.org/jdp/7497411798224861225",
+      "title": "AI Infrastructure Engineer",
+      "link": "https://jooble.org/jdp/5171103425886032070",
       "source": "Jooble",
       "match_score": 65,
       "visa_likelihood": 0.7,
       "role_category": "ai_engineer",
-      "reasoning": "Javier's profile shows strong software engineering and SQL/data integration expertise, but the 42dot Senior AI Engineer role targets advanced AI/ML expertise in Vision-Language Models and autonomous driving—areas where Javier has no demonstrated experience. His background is primarily in enterprise data systems, ERP integration, and full-stack web development. While he holds a relevant Computer Engineering degree and is pursuing Google Analytics certifications and TOPIK, he lacks the deep ML/AI foundation and autonomous driving domain knowledge required for a Senior AI Engineer position. His conversational Korean and English proficiency align with the role's language requirements. The company's location in South Korea and likely visa sponsorship (common for foreign talent in South Korea's tech sector) are favorable. However, the significant skill gap in AI/ML and VLM/VLA technologies makes this a poor match despite alignment on location aspirations and education background."
+      "reasoning": "Role is AI Infrastructure Engineer focused on GPU orchestration, data center management, and high-performance computing—not a data analyst, data scientist, or machine learning role. Candidate's background is primarily in ERP systems, SQL, .NET, and fintech microservices, with limited explicit infrastructure, Kubernetes, or DevOps experience. No mention of containerization, cloud infrastructure orchestration, or systems-level GPU management in CV. Candidate is actively learning data analytics (Coursera, Tableau, Google Analytics) but not AI infrastructure engineering skills. Korean fluency is conversational/TOPIK prep—likely insufficient for technical role. 42dot is a Korean company (likely visa-sponsoring for foreigners), and candidate has Korea experience and English proficiency, which are positive signals. However, the technical skill gap between the candidate's current expertise and the role's requirements is substantial. Better fit would be data analyst or data engineering roles with Python/SQL focus."
+    },
+    {
+      "company": "42dot",
+      "title": "ML Performance Optimization Engineer",
+      "link": "https://jooble.org/jdp/7663737229773212717",
+      "source": "Jooble",
+      "match_score": 65,
+      "visa_likelihood": 0.6,
+      "role_category": "ai_engineer",
+      "reasoning": "The role is an ML Performance Optimization Engineer focused on autonomous driving AI models, which aligns with the candidate's target AI/data roles and South Korea location preference. However, there is a significant skill gap: the candidate has SQL, .NET, and ERP integration experience but lacks demonstrated expertise in GPU/NPU optimization, model optimization, and autonomous driving systems. The candidate's ongoing Coursera data analytics certification and Java/React background show foundational ML interest, but no production ML engineering experience is evident. The role requires advanced ML optimization capabilities (quantization, pruning, inference optimization) that are not reflected in the CV. Education match is strong (Computer Engineering degree). Visa sponsorship likelihood is moderate-to-good for a South Korean tech company hiring internationally. Language requirement is likely Korean and English; candidate has conversational Korean and professional English. Overall, this is a stretch role requiring significant upskilling in ML systems optimization beyond the candidate's current experience base."
+    },
+    {
+      "company": "42dot",
+      "title": "Physical AI Engineer",
+      "link": "https://jooble.org/jdp/-8897688824835525163",
+      "source": "Jooble",
+      "match_score": 60,
+      "visa_likelihood": 0.0,
+      "role_category": "ai_engineer",
+      "reasoning": "The Physical AI Engineer role at 42dot focuses on autonomous driving, E2E planning models, and closed-loop simulation—requiring deep expertise in ML/AI systems design and robotics, areas where Javier has minimal demonstrated experience. His background is primarily in SQL, ERP systems, .NET backend development, and recent fintech work, with only foundational data analytics coursework in progress (Coursera). While his Computer Engineering degree and English proficiency are compatible, the role demands specialized AI/ML engineering skills (trajectory generation, simulation frameworks, planning algorithms) that are not evidenced in his CV. No visa sponsorship details are mentioned in the job description, and the role appears highly specialized with no explicit foreigner-friendly signals. The candidate's target of data/AI roles in South Korea is directionally aligned, but this particular role represents a significant technical skill gap."
     },
     {
       "company": "Xsolla",
@@ -20,17 +40,17 @@
       "match_score": 60,
       "visa_likelihood": 0.6,
       "role_category": "analyst",
-      "reasoning": "Strong technical alignment: candidate has direct API integration experience (REST APIs, microservices, AWS), SQL/data expertise, and incident diagnosis skills matching the role's core requirements. Located in target geography (South Korea) with conversational Korean and immediate availability. Integration Manager title suggests operations/support rather than data analyst role candidate seeks, but leverages core competencies well. Xsolla is multinational tech company likely visa-sponsor-friendly for skilled engineers. No explicit language requirements in job description, though Seoul role typically requires English (candidate C1). Main gap: role is not a Data/AI position as candidate prefers, though data analysis and technical diagnostics are present. Education fully compatible. Visa sponsorship likelihood moderate-to-good for Seoul tech roles at established companies."
+      "reasoning": "The Integration Manager role aligns partially with Javier's background. Strong match: extensive ERP-WMS integration experience, API knowledge (REST APIs, microservices), SQL/data analysis skills, incident diagnosis and root-cause analysis, and production troubleshooting expertise (1,000+ incidents resolved). Xsolla is a global company with Seoul presence, likely foreigner-friendly and potentially offering visa sponsorship. Located in Korea, matching candidate's target. Moderate gap: role emphasizes API/integration management more than data analytics, and the job posting lacks explicit education requirements or language specifications (candidate speaks English and is learning Korean). Role is more 'Integration/Technical Analyst' than pure Data/AI role candidate is targeting, but technical skill overlap is substantial. No explicit degree requirement mentioned, so education match is 'unknown' per guidelines."
     },
     {
       "company": "42dot",
-      "title": "Senior Physical AI Engineer",
-      "link": "https://jooble.org/jdp/-2070840773610834416",
+      "title": "Localization Engineer (Autonomous Driving)",
+      "link": "https://jooble.org/jdp/-1218184425960078956",
       "source": "Jooble",
       "match_score": 60,
-      "visa_likelihood": 0.6,
+      "visa_likelihood": 0.7,
       "role_category": "ai_engineer",
-      "reasoning": "42dot is seeking a Senior Physical AI Engineer for autonomous driving (E2E planning, simulation, trajectory generation). Javier's background is primarily in SQL, ERP systems, .NET, and fintech—not AI/ML or autonomous vehicles. While he has a Computer Engineering degree and is pursuing data analytics certifications, he lacks the specialized AI/robotics expertise this role demands. His Java and microservices experience provide minimal overlap. The role requires advanced AI/ML competencies in planning algorithms and simulation environments that are absent from his CV. However, 42dot is a South Korean company open to foreigners, and Javier speaks conversational Korean with TOPIK in progress, plus he's immediately available and targeting South Korea. The fundamental technical gap between his current skillset and the role's AI requirements makes this a poor match despite favorable geographic and visa factors."
+      "reasoning": "The role is at 42dot (Hyundai's autonomous driving subsidiary) in South Korea, requiring a Master's degree in Computer Engineering or related fields (candidate has Bachelor's, not Master's—significant gap). The position focuses on localization, calibration algorithms, and data quality for autonomous driving AI systems, which aligns with candidate's data integration and system design background but requires deeper AI/ML expertise. Candidate is pursuing Google Data Analytics certification and has Korean language capability (conversational + TOPIK prep), which are positives. However, the role explicitly requires 3+ years experience and a Master's degree; candidate has ~2 years total experience and only a Bachelor's. The technical alignment (data platforms, algorithm development, sensor calibration) is moderate, but educational and experience requirements present substantial barriers. Visa sponsorship likely given it's a major South Korean tech company hiring internationally. Language requirement is Korean (conversational level may be insufficient for engineering role)."
     },
     {
       "company": "42dot",
@@ -40,19 +60,39 @@
       "match_score": 55,
       "visa_likelihood": 0.7,
       "role_category": "ai_engineer",
-      "reasoning": "Role is in AI/ML (computer vision for autonomous driving), which aligns with candidate's stated goal of transitioning into data/AI roles and their Computer Engineering degree. 42dot is a major South Korean autonomous driving company known for hiring international talent, making visa sponsorship likely and the environment foreigner-friendly. However, match score is significantly reduced because: (1) candidate has no demonstrated computer vision or deep learning experience—their background is SQL/ERP/integration focused; (2) no mention of Python, TensorFlow, PyTorch, or ML frameworks in CV; (3) candidate is early-career (2+ years) for a Senior-level role; (4) job description emphasizes 'human-level autonomous driving perception'—a highly specialized ML domain requiring specific expertise the candidate does not demonstrate. While location (Korea) and visa sponsorship are favorable, the technical skill gap is substantial. Candidate would benefit from building CV depth in computer vision and deep learning before applying."
+      "reasoning": "The role is a Senior Computer Vision Engineer focused on autonomous driving with ML/AI responsibilities, which aligns with candidate's stated goal of transitioning into Data/AI roles. The candidate holds a relevant Computer Engineering degree and has some ML exposure through data analytics certifications in progress. However, there is a significant skill gap: the candidate lacks demonstrated computer vision experience, deep learning frameworks (TensorFlow, PyTorch), or autonomous driving domain expertise. Current experience is primarily in ERP systems, SQL, and fintech backend development—not perception systems or visual data processing. The candidate is pursuing Google Data Analytics certification but not computer vision or deep learning specialization. 42dot is a South Korean autonomous vehicle company likely to sponsor visas for qualified talent, and the candidate's Korean language preparation and year in Korea are positive signals. However, the lack of specialized CV/ML engineering background makes this a poor technical fit despite alignment on location preference and visa sponsorship likelihood."
     }
   ],
   "today_all": [
     {
       "company": "42dot",
-      "title": "Senior AI Engineer (Driving VLM/VLA)",
-      "link": "https://jooble.org/jdp/7497411798224861225",
+      "title": "AI Infrastructure Engineer",
+      "link": "https://jooble.org/jdp/5171103425886032070",
       "source": "Jooble",
       "match_score": 65,
       "visa_likelihood": 0.7,
       "role_category": "ai_engineer",
-      "reasoning": "Javier's profile shows strong software engineering and SQL/data integration expertise, but the 42dot Senior AI Engineer role targets advanced AI/ML expertise in Vision-Language Models and autonomous driving—areas where Javier has no demonstrated experience. His background is primarily in enterprise data systems, ERP integration, and full-stack web development. While he holds a relevant Computer Engineering degree and is pursuing Google Analytics certifications and TOPIK, he lacks the deep ML/AI foundation and autonomous driving domain knowledge required for a Senior AI Engineer position. His conversational Korean and English proficiency align with the role's language requirements. The company's location in South Korea and likely visa sponsorship (common for foreign talent in South Korea's tech sector) are favorable. However, the significant skill gap in AI/ML and VLM/VLA technologies makes this a poor match despite alignment on location aspirations and education background."
+      "reasoning": "Role is AI Infrastructure Engineer focused on GPU orchestration, data center management, and high-performance computing—not a data analyst, data scientist, or machine learning role. Candidate's background is primarily in ERP systems, SQL, .NET, and fintech microservices, with limited explicit infrastructure, Kubernetes, or DevOps experience. No mention of containerization, cloud infrastructure orchestration, or systems-level GPU management in CV. Candidate is actively learning data analytics (Coursera, Tableau, Google Analytics) but not AI infrastructure engineering skills. Korean fluency is conversational/TOPIK prep—likely insufficient for technical role. 42dot is a Korean company (likely visa-sponsoring for foreigners), and candidate has Korea experience and English proficiency, which are positive signals. However, the technical skill gap between the candidate's current expertise and the role's requirements is substantial. Better fit would be data analyst or data engineering roles with Python/SQL focus."
+    },
+    {
+      "company": "42dot",
+      "title": "ML Performance Optimization Engineer",
+      "link": "https://jooble.org/jdp/7663737229773212717",
+      "source": "Jooble",
+      "match_score": 65,
+      "visa_likelihood": 0.6,
+      "role_category": "ai_engineer",
+      "reasoning": "The role is an ML Performance Optimization Engineer focused on autonomous driving AI models, which aligns with the candidate's target AI/data roles and South Korea location preference. However, there is a significant skill gap: the candidate has SQL, .NET, and ERP integration experience but lacks demonstrated expertise in GPU/NPU optimization, model optimization, and autonomous driving systems. The candidate's ongoing Coursera data analytics certification and Java/React background show foundational ML interest, but no production ML engineering experience is evident. The role requires advanced ML optimization capabilities (quantization, pruning, inference optimization) that are not reflected in the CV. Education match is strong (Computer Engineering degree). Visa sponsorship likelihood is moderate-to-good for a South Korean tech company hiring internationally. Language requirement is likely Korean and English; candidate has conversational Korean and professional English. Overall, this is a stretch role requiring significant upskilling in ML systems optimization beyond the candidate's current experience base."
+    },
+    {
+      "company": "42dot",
+      "title": "Physical AI Engineer",
+      "link": "https://jooble.org/jdp/-8897688824835525163",
+      "source": "Jooble",
+      "match_score": 60,
+      "visa_likelihood": 0.0,
+      "role_category": "ai_engineer",
+      "reasoning": "The Physical AI Engineer role at 42dot focuses on autonomous driving, E2E planning models, and closed-loop simulation—requiring deep expertise in ML/AI systems design and robotics, areas where Javier has minimal demonstrated experience. His background is primarily in SQL, ERP systems, .NET backend development, and recent fintech work, with only foundational data analytics coursework in progress (Coursera). While his Computer Engineering degree and English proficiency are compatible, the role demands specialized AI/ML engineering skills (trajectory generation, simulation frameworks, planning algorithms) that are not evidenced in his CV. No visa sponsorship details are mentioned in the job description, and the role appears highly specialized with no explicit foreigner-friendly signals. The candidate's target of data/AI roles in South Korea is directionally aligned, but this particular role represents a significant technical skill gap."
     },
     {
       "company": "Xsolla",
@@ -62,17 +102,17 @@
       "match_score": 60,
       "visa_likelihood": 0.6,
       "role_category": "analyst",
-      "reasoning": "Strong technical alignment: candidate has direct API integration experience (REST APIs, microservices, AWS), SQL/data expertise, and incident diagnosis skills matching the role's core requirements. Located in target geography (South Korea) with conversational Korean and immediate availability. Integration Manager title suggests operations/support rather than data analyst role candidate seeks, but leverages core competencies well. Xsolla is multinational tech company likely visa-sponsor-friendly for skilled engineers. No explicit language requirements in job description, though Seoul role typically requires English (candidate C1). Main gap: role is not a Data/AI position as candidate prefers, though data analysis and technical diagnostics are present. Education fully compatible. Visa sponsorship likelihood moderate-to-good for Seoul tech roles at established companies."
+      "reasoning": "The Integration Manager role aligns partially with Javier's background. Strong match: extensive ERP-WMS integration experience, API knowledge (REST APIs, microservices), SQL/data analysis skills, incident diagnosis and root-cause analysis, and production troubleshooting expertise (1,000+ incidents resolved). Xsolla is a global company with Seoul presence, likely foreigner-friendly and potentially offering visa sponsorship. Located in Korea, matching candidate's target. Moderate gap: role emphasizes API/integration management more than data analytics, and the job posting lacks explicit education requirements or language specifications (candidate speaks English and is learning Korean). Role is more 'Integration/Technical Analyst' than pure Data/AI role candidate is targeting, but technical skill overlap is substantial. No explicit degree requirement mentioned, so education match is 'unknown' per guidelines."
     },
     {
       "company": "42dot",
-      "title": "Senior Physical AI Engineer",
-      "link": "https://jooble.org/jdp/-2070840773610834416",
+      "title": "Localization Engineer (Autonomous Driving)",
+      "link": "https://jooble.org/jdp/-1218184425960078956",
       "source": "Jooble",
       "match_score": 60,
-      "visa_likelihood": 0.6,
+      "visa_likelihood": 0.7,
       "role_category": "ai_engineer",
-      "reasoning": "42dot is seeking a Senior Physical AI Engineer for autonomous driving (E2E planning, simulation, trajectory generation). Javier's background is primarily in SQL, ERP systems, .NET, and fintech—not AI/ML or autonomous vehicles. While he has a Computer Engineering degree and is pursuing data analytics certifications, he lacks the specialized AI/robotics expertise this role demands. His Java and microservices experience provide minimal overlap. The role requires advanced AI/ML competencies in planning algorithms and simulation environments that are absent from his CV. However, 42dot is a South Korean company open to foreigners, and Javier speaks conversational Korean with TOPIK in progress, plus he's immediately available and targeting South Korea. The fundamental technical gap between his current skillset and the role's AI requirements makes this a poor match despite favorable geographic and visa factors."
+      "reasoning": "The role is at 42dot (Hyundai's autonomous driving subsidiary) in South Korea, requiring a Master's degree in Computer Engineering or related fields (candidate has Bachelor's, not Master's—significant gap). The position focuses on localization, calibration algorithms, and data quality for autonomous driving AI systems, which aligns with candidate's data integration and system design background but requires deeper AI/ML expertise. Candidate is pursuing Google Data Analytics certification and has Korean language capability (conversational + TOPIK prep), which are positives. However, the role explicitly requires 3+ years experience and a Master's degree; candidate has ~2 years total experience and only a Bachelor's. The technical alignment (data platforms, algorithm development, sensor calibration) is moderate, but educational and experience requirements present substantial barriers. Visa sponsorship likely given it's a major South Korean tech company hiring internationally. Language requirement is Korean (conversational level may be insufficient for engineering role)."
     },
     {
       "company": "42dot",
@@ -82,7 +122,17 @@
       "match_score": 55,
       "visa_likelihood": 0.7,
       "role_category": "ai_engineer",
-      "reasoning": "Role is in AI/ML (computer vision for autonomous driving), which aligns with candidate's stated goal of transitioning into data/AI roles and their Computer Engineering degree. 42dot is a major South Korean autonomous driving company known for hiring international talent, making visa sponsorship likely and the environment foreigner-friendly. However, match score is significantly reduced because: (1) candidate has no demonstrated computer vision or deep learning experience—their background is SQL/ERP/integration focused; (2) no mention of Python, TensorFlow, PyTorch, or ML frameworks in CV; (3) candidate is early-career (2+ years) for a Senior-level role; (4) job description emphasizes 'human-level autonomous driving perception'—a highly specialized ML domain requiring specific expertise the candidate does not demonstrate. While location (Korea) and visa sponsorship are favorable, the technical skill gap is substantial. Candidate would benefit from building CV depth in computer vision and deep learning before applying."
+      "reasoning": "The role is a Senior Computer Vision Engineer focused on autonomous driving with ML/AI responsibilities, which aligns with candidate's stated goal of transitioning into Data/AI roles. The candidate holds a relevant Computer Engineering degree and has some ML exposure through data analytics certifications in progress. However, there is a significant skill gap: the candidate lacks demonstrated computer vision experience, deep learning frameworks (TensorFlow, PyTorch), or autonomous driving domain expertise. Current experience is primarily in ERP systems, SQL, and fintech backend development—not perception systems or visual data processing. The candidate is pursuing Google Data Analytics certification but not computer vision or deep learning specialization. 42dot is a South Korean autonomous vehicle company likely to sponsor visas for qualified talent, and the candidate's Korean language preparation and year in Korea are positive signals. However, the lack of specialized CV/ML engineering background makes this a poor technical fit despite alignment on location preference and visa sponsorship likelihood."
+    },
+    {
+      "company": "Xsolla",
+      "title": "Senior Backend Engineer — Korea",
+      "link": "https://jooble.org/jdp/-8530010007118563875",
+      "source": "Jooble",
+      "match_score": 45,
+      "visa_likelihood": 0.0,
+      "role_category": "other",
+      "reasoning": "This is a Senior Backend Engineer role, not a data analyst or AI engineer position as the candidate targets. The job description emphasizes Kubernetes, Docker, and container orchestration—technologies not present in the candidate's CV. While Javier has backend experience (.NET, Java, REST APIs, microservices, AWS), he lacks explicit Kubernetes/Docker expertise and cloud infrastructure depth. The candidate is transitioning toward data analytics (pursuing Google Analytics and Tableau certifications), not deepening backend engineering skills. No mention of visa sponsorship or language requirements in the provided job description snippet. The role is in South Korea (aligning with candidate's target), but the technical fit is poor given the candidate's stated career direction and skill gaps in containerization and orchestration."
     },
     {
       "company": "42dot",
@@ -92,82 +142,12 @@
       "match_score": 45,
       "visa_likelihood": 0.6,
       "role_category": "other",
-      "reasoning": "This is a Media Framework Engineer role focused on automotive/vehicle OS systems, not a Data/AI analyst position that the candidate is targeting. While the candidate has strong software engineering fundamentals (C#/.NET, Java, React, AWS), the role emphasizes GStreamer and media streaming technologies which are absent from their CV. The candidate's SQL/data integration expertise and ongoing data analytics certifications are not relevant to this embedded systems-focused position. The role does not mention data science, analytics, or AI components despite the job description mentioning 'Data Collection.' South Korea location aligns with candidate's target, and Computer Engineering degree is compatible. However, the significant technology gap and misalignment with stated career goals (data/AI roles) result in poor fit."
+      "reasoning": "This is a Media Framework Engineer role focused on vehicle OS, autonomous driving, and media systems—a domain-specific automotive/embedded systems position. Javier's background is in data integration, ERP systems, SQL, .NET, and fintech, with some React/Java experience. While he has strong software engineering fundamentals and a relevant CS degree, there is minimal technical overlap with the core requirements (GStreamer, VStreamer, Vehicle OS, autonomous driving frameworks). The role does not explicitly require Korean language, and 42dot as a South Korean company likely sponsors visas for foreign talent, which aligns with Javier's relocation goals. However, Javier explicitly targets Data/AI roles in Korea, and this position is neither data-focused nor AI-oriented—it is an embedded systems/automotive engineering role. The job description snippet is incomplete, limiting full assessment. The match is poor for Javier's stated career trajectory."
     },
     {
       "company": "42dot",
       "title": "Senior Software Engineer (AD Framework)",
       "link": "https://jooble.org/jdp/-2674434469238036295",
-      "source": "Jooble",
-      "match_score": 45,
-      "visa_likelihood": 0.65,
-      "role_category": "other",
-      "reasoning": "The role is a Senior Software Engineer position at an autonomous driving company (42dot) focused on real-time systems, frameworks, and data utilities. While the candidate has strong backend and data integration experience (.NET, SQL Server, microservices), this position targets automotive/AD systems which is a specialized domain not reflected in their CV. The candidate's education (Computer Engineering) matches well, and 42dot being a South Korea-based company aligns with their target location and provides reasonable visa sponsorship likelihood for senior roles. However, the role appears to be a mid-to-senior level systems engineer position rather than a data analyst or AI role that the candidate is actively pursuing. The job description lacks explicit language requirements but 42dot typically requires English. The 'Senior' title suggests the candidate may be underqualified with 2.5 years total experience. The focus on autonomous driving frameworks and real-time systems represents a significant domain shift from their ERP/WMS/fintech background, making this a lateral-to-downward match for their stated career goals."
-    },
-    {
-      "company": "42dot",
-      "title": "Senior Release Engineer",
-      "link": "https://jooble.org/jdp/-1111477517738147834",
-      "source": "Jooble",
-      "match_score": 45,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "Poor match. The role is a Senior Release Engineer focused on autonomous vehicle software release lifecycle, CI/CD, and OTA pipelines—fundamentally a DevOps/Release Management role, not a Data or AI role as the candidate seeks. While the candidate has strong software engineering fundamentals and cloud experience (AWS), they lack specific DevOps, release management, and automotive/autonomous systems expertise. The role description is in Korean and explicitly targets Korean-speaking engineers; the candidate has only conversational Korean (TOPIK in preparation), creating a significant language barrier for a senior-level position. No visa sponsorship signal is evident. The candidate's profile targets data analytics and AI roles in Korea, making this technical infrastructure role misaligned with career aspirations."
-    },
-    {
-      "company": "Xsolla",
-      "title": "Senior Full-stack Engineer — Korea",
-      "link": "https://jooble.org/jdp/8859528182935451783",
-      "source": "Jooble",
-      "match_score": 40,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "The role is Senior Full-Stack Engineer, not a Data/AI position that aligns with candidate's stated career transition goals. The job description snippet is incomplete and lacks critical details: no mention of required technologies beyond Kubernetes/Docker, no language requirements stated, no salary information, no education requirements specified. Candidate has some full-stack experience (.NET, React, Java) but the role emphasizes cloud infrastructure and container orchestration where the candidate shows limited demonstrated expertise. Job location is South Korea (candidate's target), but visa sponsorship status is unknown from the incomplete posting. The incomplete job description makes comprehensive matching difficult. Candidate's data analytics certifications in progress and SQL/data integration focus suggest misalignment with a general full-stack engineering role."
-    },
-    {
-      "company": "42dot",
-      "title": "Localization Engineer (Autonomous Driving)",
-      "link": "https://jooble.org/jdp/-1218184425960078956",
-      "source": "Jooble",
-      "match_score": 35,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "Poor match. The role requires a Master's degree in Computer Engineering, Electronics, Mechanical Engineering, or Robotics with 3+ years of experience in autonomous driving localization/calibration. Javier has a Bachelor's degree (not Master's), 2 years of experience (not 3+), and no background in autonomous driving, robotics, localization algorithms, or sensor calibration. While he has data skills and AI coursework in progress, the role is specialized hardware/robotics-focused, not a data analyst position. The job description is partially in Korean with no explicit language requirements stated, but the technical domain mismatch is severe. Visa sponsorship likelihood is low given the education and experience gaps make him non-competitive."
-    },
-    {
-      "company": "42dot",
-      "title": "Advanced Quality Engineer (신차 품질 보증)",
-      "link": "https://jooble.org/jdp/-8388411632633861316",
-      "source": "Jooble",
-      "match_score": 20,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "Parse error"
-    },
-    {
-      "company": "Xsolla",
-      "title": "Senior Backend Engineer — Korea",
-      "link": "https://jooble.org/jdp/-8530010007118563875",
-      "source": "Jooble",
-      "match_score": 20,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "The job offer provided is incomplete and lacks critical details needed for proper evaluation. Only the title 'Senior Backend Engineer — Korea' and location (South Korea) are visible; the full job description, required technologies, qualifications, languages, and visa sponsorship information are missing or truncated ('&nbsp;...ABOUT YOU...'). The candidate has backend development experience (.NET, Java, REST APIs, microservices) that could be relevant to a Senior Backend Engineer role, and meets the South Korea location requirement. However, without seeing the full job description, technology stack requirements, and visa sponsorship policy, a reliable match assessment cannot be completed. The candidate's stated career goal is transitioning to a Data Analyst role, which conflicts with a Senior Backend Engineer position. The candidate is actively pursuing data analytics certifications rather than advanced backend engineering credentials."
-    },
-    {
-      "company": "Xsolla",
-      "title": "Tech lead, Korea",
-      "link": "https://jooble.org/jdp/7666925296056884504",
-      "source": "Jooble",
-      "match_score": 20,
-      "visa_likelihood": 0.0,
-      "role_category": "other",
-      "reasoning": "The job offer description is incomplete and does not contain sufficient information to evaluate the position. The provided text only includes privacy policy language and data protection disclaimers, with no actual job description details, required qualifications, technology stack, language requirements, salary information, or role responsibilities. Without the full job posting content, it is impossible to assess alignment between the candidate's profile (software engineer with SQL/ERP/data integration background seeking data/AI roles) and the actual position requirements. The role title 'Tech lead, Korea' suggests a leadership position at Xsolla in South Korea, which aligns with the candidate's target location and visa sponsorship needs, but cannot be properly evaluated without complete job details."
-    },
-    {
-      "company": "42dot",
-      "title": "Deep Learning Engineer (음성 인식 및 wake word detection 개발)",
-      "link": "https://jooble.org/jdp/-8596300869779411254",
       "source": "Jooble",
       "match_score": 20,
       "visa_likelihood": 0.0,
@@ -182,12 +162,12 @@
       "match_score": 20,
       "visa_likelihood": 0.0,
       "role_category": "other",
-      "reasoning": "This is an Enterprise Sales Lead role, which is fundamentally misaligned with the candidate's profile and career goals. The candidate is a Software Engineer / Data Analyst with technical expertise in SQL, .NET, ERP systems, and is actively pursuing data analytics certifications. They explicitly want Data/AI roles. This sales position requires business development, client relationship management, and enterprise sales skills—competencies not demonstrated in the candidate's CV. No job description details were provided in the offer, so education requirements, languages, and tech stack cannot be verified. While the role is in South Korea (matching the candidate's target location), it represents a complete career pivot away from technical work. The candidate would be significantly overqualified technically yet underqualified for the sales function."
+      "reasoning": "This is an Enterprise Sales Lead role, which is fundamentally misaligned with the candidate's profile and career goals. The candidate is a Software Engineer with 2+ years of technical experience in SQL, .NET, ERP systems, and full-stack development, actively pursuing a transition into Data Analytics / AI roles. The job offer does not include a job description or role details, making full evaluation impossible, but 'Enterprise Sales Lead' indicates a sales/business development position, not a technical or data-focused role. The candidate has no sales experience mentioned in their CV and explicitly wants data/AI roles. No technology stack, education requirements, or language requirements are specified in the offer. While the candidate speaks English and Korean (conversational), and the role is in South Korea (aligning with their target location), the fundamental mismatch between a sales leadership position and a technical engineer seeking analytics/AI work makes this an extremely poor fit."
     },
     {
       "company": "42dot",
-      "title": "ML Performance Optimization Engineer",
-      "link": "https://jooble.org/jdp/7663737229773212717",
+      "title": "Deep Learning Engineer (음성 인식 및 wake word detection 개발)",
+      "link": "https://jooble.org/jdp/-8596300869779411254",
       "source": "Jooble",
       "match_score": 20,
       "visa_likelihood": 0.0,
@@ -196,8 +176,28 @@
     },
     {
       "company": "42dot",
-      "title": "Physical AI Engineer",
-      "link": "https://jooble.org/jdp/-8897688824835525163",
+      "title": "Advanced Quality Engineer (신차 품질 보증)",
+      "link": "https://jooble.org/jdp/-8388411632633861316",
+      "source": "Jooble",
+      "match_score": 20,
+      "visa_likelihood": 0.4,
+      "role_category": "other",
+      "reasoning": "This role is a Quality Assurance / Quality Engineer position focused on automotive software quality (APQP, defect prevention, production quality), NOT a data analyst or AI engineer role as the candidate seeks. While the candidate has relevant software engineering and testing experience, this is fundamentally misaligned with their stated career goal of transitioning into data analyst/AI roles in Korean tech. The role requires Korean language proficiency (candidate is only conversational and preparing for TOPIK), which is a significant barrier for a foreigner in a quality assurance function requiring stakeholder communication with Hyundai. No explicit visa sponsorship mention or foreigner-friendly signals in the job description. The candidate's database, incident analysis, and system design skills could theoretically transfer, but the role demands automotive domain knowledge and Korean fluency that the candidate lacks. Match score reflects fundamental career misalignment despite technical competency."
+    },
+    {
+      "company": "Xsolla",
+      "title": "Tech lead, Korea",
+      "link": "https://jooble.org/jdp/5754793088445299549",
+      "source": "Jooble",
+      "match_score": 20,
+      "visa_likelihood": 0.0,
+      "role_category": "other",
+      "reasoning": "The job offer description is almost entirely redacted, containing only boilerplate privacy/data protection language. No actual job details, technologies, requirements, responsibilities, location specifics, salary, visa sponsorship information, language requirements, or qualifications are visible. Unable to assess match between candidate's profile and role requirements. Candidate has relevant software engineering background, SQL/data integration expertise, and Korean language skills in progress, but without visible job specifications, no meaningful evaluation can be performed."
+    },
+    {
+      "company": "42dot",
+      "title": "Senior AI Engineer (Driving VLM/VLA)",
+      "link": "https://jooble.org/jdp/7497411798224861225",
       "source": "Jooble",
       "match_score": 20,
       "visa_likelihood": 0.0,
@@ -206,8 +206,8 @@
     },
     {
       "company": "42dot",
-      "title": "AI Infrastructure Engineer",
-      "link": "https://jooble.org/jdp/5171103425886032070",
+      "title": "Senior Physical AI Engineer",
+      "link": "https://jooble.org/jdp/-2070840773610834416",
       "source": "Jooble",
       "match_score": 20,
       "visa_likelihood": 0.0,
@@ -218,6 +218,16 @@
       "company": "42dot",
       "title": "AI Engineer (Navigation Agent)",
       "link": "https://jooble.org/jdp/5889436843980882165",
+      "source": "Jooble",
+      "match_score": 20,
+      "visa_likelihood": 0.0,
+      "role_category": "other",
+      "reasoning": "Parse error"
+    },
+    {
+      "company": "42dot",
+      "title": "Senior Release Engineer",
+      "link": "https://jooble.org/jdp/-1111477517738147834",
       "source": "Jooble",
       "match_score": 20,
       "visa_likelihood": 0.0,
